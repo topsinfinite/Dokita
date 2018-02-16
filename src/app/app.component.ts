@@ -33,7 +33,7 @@ export class MyApp {
         this.initializeApp();
 
         this.appMenuItems = [
-            {title: 'Properties', component: PropertyListPage, icon: 'home'},
+            {title: 'Property', component: PropertyListPage, icon: 'home'},
             {title: 'Brokers', component: BrokerListPage, icon: 'people'},
             {title: 'Favorites', component: FavoriteListPage, icon: 'star'},
             {title: 'Get Preapproved', component: WelcomePage, icon: 'checkmark-circle'},
