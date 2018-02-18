@@ -5116,6 +5116,7 @@ ion-header {
   z-index: 10;
   display: block;
   width: 100%;
+  background-color:#006c84;
 }
 
 ion-footer {
@@ -24315,7 +24316,7 @@ ion-navbar.toolbar {
 
 .menu-logo {
   height: 80px;
-  margin: 12px 0 0 90px;
+  padding:10px;
 }
 
 .about-header {
