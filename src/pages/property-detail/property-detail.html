@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Property</ion-title>
+        <ion-title>{{property.name}}</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -12,6 +12,10 @@
             <p>{{property.address}}, {{property.city}} {{property.state}}</p>
         </ion-card-content>
         <ion-list>
+            <ion-item>
+                <ion-note>{{date}}</ion-note>
+                <ion-datetime [(ngModel)]="date" displayFormat="YYYY-MM"></ion-datetime>
+            </ion-item>
 
             <ion-item>
                 <ion-icon item-left name="moon"></ion-icon>

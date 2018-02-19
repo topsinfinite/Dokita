@@ -10,14 +10,20 @@ import {PropertyService} from '../../providers/property-service-mock';
 export class PropertyDetailPage {
 
     property: any;
+    date:Date;
 
-    constructor(public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, public navParams: NavParams, public propertyService: PropertyService, public toastCtrl: ToastController) {
+    constructor(public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, 
+        public navParams: NavParams, public propertyService: PropertyService, public toastCtrl: ToastController)
+         {
         this.property = this.navParams.data;
+        this.date=new Date();
         propertyService.findById(this.property.id).then(
             property => this.property = property
+            
         );
     }
 
+    
     openBrokerDetail(broker) {
         this.navCtrl.push(BrokerDetailPage, broker);
     }
