@@ -18,8 +18,11 @@
                 <ion-thumbnail item-left>
                     <img src="{{property.thumbnail}}"/>
                 </ion-thumbnail>
-                <h2>{{property.title}}</h2>
-                <p>{{property.city}}, {{property.state}} ∙ {{ property.price }}</p>
+                <h2>{{property.name}}</h2>
+                <h5>{{property.title}}</h5>
+                <p>{{property.city}}, {{property.state}}. Rating: 
+                  <ion-icon color="energized" item-right name="star" *ngFor="let n of getRating(property.rating)"></ion-icon>
+                </p>
             </button>
             <ion-item-options>
                 <button danger (click)="deleteItem(property)">Delete</button>

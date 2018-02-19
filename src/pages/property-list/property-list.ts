@@ -14,12 +14,17 @@ export class PropertyListPage {
     searchKey: string = "";
     viewMode: string = "list";
     map;
-    markersGroup;
+    markersGroup; 
+    ratingLength;
 
     constructor(public navCtrl: NavController, public service: PropertyService, public config: Config) {
         this.findAll();
     }
-
+    
+    getRating(num:string){
+       // return new Array(4);
+        return new Array(parseInt(num));
+    }
     openPropertyDetail(property: any) {
         this.navCtrl.push(PropertyDetailPage, property);
     }
