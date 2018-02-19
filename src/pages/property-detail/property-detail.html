@@ -10,17 +10,20 @@
     <ion-card *ngIf="property.id">
         <img src="{{property.picture}}"/>
         <ion-card-content>
-            <h2 class="card-title">{{property.title}}</h2>
+            <h1 class="card-title">{{property.title}}</h1>
             <p>{{property.address}}, {{property.city}} {{property.state}}</p>
         </ion-card-content>
+       <ion-list>
+           <ion-list-header>Shedule Appointment</ion-list-header>
         <ion-item>
                 <ion-icon item-left name="calendar" item-left></ion-icon>
                 <ion-datetime min="2018" [(ngModel)]="appdate" (ionChange)="changeDate($event)"></ion-datetime>
                 <ion-icon item-right name="arrow-forward" ></ion-icon>
             </ion-item>
         <ion-scroll scrollX="true" class="item" *ngIf="isSet">
-                <button ion-button class="btn-padding" *ngFor="let itm of schedules" (click)="logAppointment($event)">{{itm}}</button>
-            </ion-scroll>
+                <button ion-button class="btn-padding" *ngFor="let itm of schedules" (click)="logAppointment(itm)">{{itm}}</button>
+        </ion-scroll>
+        </ion-list>
         <ion-list>
             
             <ion-item>
