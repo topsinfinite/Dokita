@@ -22,7 +22,8 @@ let properties: Array<any> = [
             name: "Caroline Kingsley",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 2,
@@ -47,7 +48,8 @@ let properties: Array<any> = [
             name: "Caroline Kingsley",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 3,
@@ -72,7 +74,8 @@ let properties: Array<any> = [
             name: "Michael Jones",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 4,
@@ -97,7 +100,8 @@ let properties: Array<any> = [
             name: "Jonathan Bradley",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 5,
@@ -122,7 +126,8 @@ let properties: Array<any> = [
             name: "Jennifer Wu",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 6,
@@ -147,7 +152,8 @@ let properties: Array<any> = [
             name: "Olivia Green",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 7,
@@ -172,7 +178,8 @@ let properties: Array<any> = [
             name: "Miriam Aupont",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 8,
@@ -197,7 +204,8 @@ let properties: Array<any> = [
             name: "Michelle Lambert",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michelle_lambert.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 9,
@@ -222,7 +230,8 @@ let properties: Array<any> = [
             name: "Michael Jones",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 10,
@@ -247,7 +256,8 @@ let properties: Array<any> = [
             name: "Caroline Kingsley",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 11,
@@ -272,7 +282,8 @@ let properties: Array<any> = [
             name: "Jennifer Wu",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
         id: 12,
@@ -297,7 +308,8 @@ let properties: Array<any> = [
             name: "Olivia Green",
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
-        }
+        },
+        scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     }
 ];
 

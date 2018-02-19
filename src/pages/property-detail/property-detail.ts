@@ -10,20 +10,29 @@ import {PropertyService} from '../../providers/property-service-mock';
 export class PropertyDetailPage {
 
     property: any;
-    date:Date;
+    appdate:any;
+    isSet:boolean=false;
+    schedules:string[]=[];
 
     constructor(public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, 
         public navParams: NavParams, public propertyService: PropertyService, public toastCtrl: ToastController)
          {
         this.property = this.navParams.data;
-        this.date=new Date();
+        this.appdate=new Date().toISOString();
         propertyService.findById(this.property.id).then(
             property => this.property = property
             
         );
     }
 
-    
+    changeDate(dateval){
+        this.isSet=true;
+        this.schedules=this.property.scheduleTime;
+    }
+    logAppointment(evt){
+        console.log(this.appdate);
+        console.log(evt);
+    }
     openBrokerDetail(broker) {
         this.navCtrl.push(BrokerDetailPage, broker);
     }
