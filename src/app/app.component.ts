@@ -33,10 +33,10 @@ export class MyApp {
         this.initializeApp();
 
         this.appMenuItems = [
-            {title: 'Property', component: PropertyListPage, icon: 'home'},
-            {title: 'Brokers', component: BrokerListPage, icon: 'people'},
-            {title: 'Favorites', component: FavoriteListPage, icon: 'star'},
-            {title: 'Get Preapproved', component: WelcomePage, icon: 'checkmark-circle'},
+            {title: 'Doctors', component: PropertyListPage, icon: 'people'},
+            {title: 'Clinics', component: BrokerListPage, icon: 'list-box'},
+            {title: 'Appointments', component: FavoriteListPage, icon: 'clock'},
+            {title: 'Insurance Validation', component: WelcomePage, icon: 'barcode'},
         ];
 
         this.accountMenuItems = [
