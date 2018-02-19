@@ -1,3 +1,9 @@
+ion-scroll{
+  background-color: rgb(64, 73, 13);
+  min-height:50px !important;
+  white-space: nowrap !important;
+  padding-bottom:4px !important;
+}
 .ion-ios-add:before {
   content: "\f102";
 }

@@ -4,9 +4,9 @@ ion-note {
 }
 ion-scroll{
   background-color: rgb(64, 73, 13);
-  min-height:50px;
-  white-space: nowrap;
-  padding-bottom:4px;
+  min-height:50px !important;
+  white-space: nowrap !important;
+  padding-bottom:4px !important;
 }
 ion-col{
 	padding: 16px;
