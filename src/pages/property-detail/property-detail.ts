@@ -22,16 +22,19 @@ export class PropertyDetailPage {
         public navParams: NavParams, public propertyService: PropertyService, public toastCtrl: ToastController)
          {
         this.property = this.navParams.data;
-        this.appdate=new Date().toISOString();
         propertyService.findById(this.property.id).then(
             property => this.property = property
             
         );
         this.getPendingAppointCount();
     }
-
+    ionViewDidLoad(){
+        this.appdate=new Date().toISOString();
+    }
     changeDate(dateval){
         this.isSet=true;
+        //let datestring=`${dateval.year.text}-${dateval.month.value}-${dateval.day.text}T00:00:00`;
+        //this.appdate=dateval;
         this.schedules=this.property.scheduleTime;
     }
     logAppointment(evt){
@@ -44,7 +47,7 @@ export class PropertyDetailPage {
     }
     confirmAppointment(timepicked) {
        // timepicked=timepicked.toISOString();
-       this.appdate=moment().format('D MMM YYYY');
+       this.appdate=moment(this.appdate).format('D MMM YYYY');
         let confirm = this.alertCtrl.create({
           title: 'Kindly confirm your appointment',
           message: `Your scheduled appointment is with : ${this.property.name} Date: ${this.appdate } Time: ${timepicked}`,
