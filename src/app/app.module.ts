@@ -10,6 +10,7 @@ import {PropertyDetailPage} from '../pages/property-detail/property-detail';
 import {BrokerListPage} from '../pages/broker-list/broker-list';
 import {BrokerDetailPage} from '../pages/broker-detail/broker-detail';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
+import {AppointmentListPage} from '../pages/appointment-list/appointment-list';
 import {AboutPage} from '../pages/about/about';
 
 import {PropertyService} from "../providers/property-service-mock";
@@ -27,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PropertyDetailPage,
     FavoriteListPage,
     BrokerListPage,
-    BrokerDetailPage
+    BrokerDetailPage,
+    AppointmentListPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PropertyDetailPage,
     FavoriteListPage,
     BrokerListPage,
-    BrokerDetailPage
+    BrokerDetailPage,
+    AppointmentListPage
   ],
   providers: [
     StatusBar,

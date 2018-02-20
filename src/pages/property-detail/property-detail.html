@@ -31,14 +31,15 @@
                 <h3>Bedrooms</h3>
                 <ion-note item-right>{{property.bedrooms}}</ion-note>
             </ion-item>
-            <ion-item>
+            <button ion-item (click)="goAppointment()" clear >
                 <ion-icon item-left name="leaf"></ion-icon>
-                <h3>Bathrooms</h3>
-                <ion-note item-right>{{property.bathrooms}}</ion-note>
-            </ion-item>
+                <h3>Pending Appointments</h3>
+
+                <ion-note item-right>{{appointmentCount}}</ion-note>
+            </button>
             <ion-item>
                 <ion-icon item-left name="pricetag"></ion-icon>
-                <h3>Asking Price</h3>
+                <h3>Cost of Visit</h3>
                 <ion-note item-right>{{property.price}}</ion-note>
             </ion-item>
             <button ion-item (click)="openBrokerDetail(property.broker)">

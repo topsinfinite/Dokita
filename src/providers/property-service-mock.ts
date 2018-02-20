@@ -6,6 +6,7 @@ export class PropertyService {
 
   favoriteCounter: number = 0;
   favorites: Array<any> = [];
+  appointments:Array<any>=[];
 
   findAll() {
     return Promise.resolve(properties);
@@ -35,6 +36,20 @@ export class PropertyService {
     let index = this.favorites.indexOf(favorite);
     if (index > -1) {
       this.favorites.splice(index, 1);
+    }
+    return Promise.resolve();
+  }
+  addAppointment(appDetail:any){
+    this.appointments.push({doctor:appDetail.doctor,appdate:appDetail.appdate,apptime:appDetail.apptime});
+    return Promise.resolve()
+  }
+  getAppointments(){
+    return Promise.resolve(this.appointments);
+  }
+  removeAppointment(appDetail){
+    let index = this.appointments.indexOf(appDetail);
+    if (index > -1) {
+      this.appointments.splice(index, 1);
     }
     return Promise.resolve();
   }

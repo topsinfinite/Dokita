@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
-import {ActionSheetController, ActionSheet, NavController, NavParams, ToastController} from 'ionic-angular';
+import * as moment from 'moment';
+import {ActionSheetController, ActionSheet, NavController, NavParams, ToastController,AlertController} from 'ionic-angular';
 import {BrokerDetailPage} from '../broker-detail/broker-detail';
+import {AppointmentListPage} from '../appointment-list/appointment-list';
 import {PropertyService} from '../../providers/property-service-mock';
 
 @Component({
@@ -13,8 +15,10 @@ export class PropertyDetailPage {
     appdate:any;
     isSet:boolean=false;
     schedules:string[]=[];
+    appDetail:any;
+    appointmentCount:any;
 
-    constructor(public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, 
+    constructor(public alertCtrl: AlertController,public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, 
         public navParams: NavParams, public propertyService: PropertyService, public toastCtrl: ToastController)
          {
         this.property = this.navParams.data;
@@ -23,6 +27,7 @@ export class PropertyDetailPage {
             property => this.property = property
             
         );
+        this.getPendingAppointCount();
     }
 
     changeDate(dateval){
@@ -30,13 +35,54 @@ export class PropertyDetailPage {
         this.schedules=this.property.scheduleTime;
     }
     logAppointment(evt){
-        console.log(this.appdate);
+       // console.log(this.appdate);
+       this.confirmAppointment(evt);
         console.log(evt);
     }
+    getPendingAppointCount(){
+        this.propertyService.getAppointments().then(data=>this.appointmentCount=data.length);
+    }
+    confirmAppointment(timepicked) {
+       // timepicked=timepicked.toISOString();
+       this.appdate=moment().format('D MMM YYYY');
+        let confirm = this.alertCtrl.create({
+          title: 'Kindly confirm your appointment',
+          message: `Your scheduled appointment is with : ${this.property.name} Date: ${this.appdate } Time: ${timepicked}`,
+          buttons: [
+            {
+              text: 'Cancel',
+              handler: () => {
+                console.log('Disagree clicked');
+              }
+            },
+            {
+              text: 'Confirm',
+              handler: () => {
+                  this.appDetail={
+                      doctor:this.property,
+                      appdate:this.appdate,
+                      apptime:timepicked
+                  }
+                 this.propertyService.addAppointment(this.appDetail);
+                 this.getPendingAppointCount();
+                 let toast = this.toastCtrl.create({
+                    message: 'Successfully added to your appointments',
+                    cssClass: 'mytoast',
+                    duration: 1000
+                });
+                toast.present(toast);
+              }
+            }
+          ]
+        });
+        confirm.present();
+      }
     openBrokerDetail(broker) {
         this.navCtrl.push(BrokerDetailPage, broker);
     }
-
+    goAppointment(){
+        this.navCtrl.push(AppointmentListPage);
+    }
     favorite(property) {
         this.propertyService.favorite(property)
             .then(property => {
