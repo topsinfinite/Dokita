@@ -33,12 +33,9 @@ export class PropertyDetailPage {
     }
     changeDate(dateval){
         this.isSet=true;
-        //let datestring=`${dateval.year.text}-${dateval.month.value}-${dateval.day.text}T00:00:00`;
-        //this.appdate=dateval;
         this.schedules=this.property.scheduleTime;
     }
     logAppointment(evt){
-       // console.log(this.appdate);
        this.confirmAppointment(evt);
         console.log(evt);
     }
@@ -46,7 +43,6 @@ export class PropertyDetailPage {
         this.propertyService.getAppointments().then(data=>this.appointmentCount=data.length);
     }
     confirmAppointment(timepicked) {
-       // timepicked=timepicked.toISOString();
        this.appdate=moment(this.appdate).format('D MMM YYYY');
         let confirm = this.alertCtrl.create({
           title: 'Kindly confirm your appointment',
