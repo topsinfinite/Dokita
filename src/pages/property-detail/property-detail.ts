@@ -13,6 +13,7 @@ export class PropertyDetailPage {
 
     property: any;
     appdate:any;
+    appmtType:string;
     isSet:boolean=false;
     schedules:string[]=[];
     appDetail:any;
@@ -46,7 +47,7 @@ export class PropertyDetailPage {
        this.appdate=moment(this.appdate).format('D MMM YYYY');
         let confirm = this.alertCtrl.create({
           title: 'Kindly confirm your appointment',
-          message: `Your scheduled appointment is with : ${this.property.name} Date: ${this.appdate } Time: ${timepicked}`,
+          message: `Your scheduled appointment is with : ${this.property.name} Appointment Type: ${this.appmtType} Date: ${this.appdate } Time: ${timepicked}`,
           buttons: [
             {
               text: 'Cancel',
@@ -60,7 +61,8 @@ export class PropertyDetailPage {
                   this.appDetail={
                       doctor:this.property,
                       appdate:this.appdate,
-                      apptime:timepicked
+                      apptime:timepicked,
+                      apptype:this.appmtType
                   }
                  this.propertyService.addAppointment(this.appDetail);
                  this.getPendingAppointCount();
@@ -76,8 +78,8 @@ export class PropertyDetailPage {
         });
         confirm.present();
       }
-    openBrokerDetail(broker) {
-        this.navCtrl.push(BrokerDetailPage, broker);
+    openBrokerDetail(id) {
+        this.navCtrl.push(BrokerDetailPage, id);
     }
     goAppointment(){
         this.navCtrl.push(AppointmentListPage);

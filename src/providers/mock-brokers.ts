@@ -1,29 +1,47 @@
 let brokers: Array<any> = [
     {
         id: 1,
-        name: "Caroline Kingsley",
-        title: "Senior Broker",
+        name: "Tokun Ajayi",
+        title: "Primary care doctor",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "caroline@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
     },
     {
         id: 2,
-        name: "Michael Jones",
-        title: "Senior Broker",
+        name: "Caroline Kingsley ",
+        title: "Internal medicine",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "michael@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Caroline Kingsley M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
     },
     {
         id: 3,
         name: "Jonathan Bradley",
-        title: "Senior Broker",
+        title: "Cardiologist",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "jonathan@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Jonathan Bradley, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg"
     },
     {
@@ -32,7 +50,13 @@ let brokers: Array<any> = [
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "jen@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
     },
     {
@@ -41,7 +65,13 @@ let brokers: Array<any> = [
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "olivia@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
     },
     {
@@ -50,7 +80,13 @@ let brokers: Array<any> = [
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "miriam@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg"
     },
     {
@@ -59,7 +95,13 @@ let brokers: Array<any> = [
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "michelle@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michelle_lambert.jpg"
     },
     {
@@ -68,7 +110,13 @@ let brokers: Array<any> = [
         title: "Senior Broker",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
-        email: "victor@ionicrealty.com",
+        email: "toks@ionichealth.com",
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            }, 
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/victor_ochoa.jpg"
     }
 ];

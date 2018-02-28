@@ -40,7 +40,7 @@ export class PropertyService {
     return Promise.resolve();
   }
   addAppointment(appDetail:any){
-    this.appointments.push({doctor:appDetail.doctor,appdate:appDetail.appdate,apptime:appDetail.apptime});
+    this.appointments.push({doctor:appDetail.doctor,appdate:appDetail.appdate,apptime:appDetail.apptime,apptype:appDetail.apptype});
     return Promise.resolve()
   }
   getAppointments(){

@@ -8,12 +8,18 @@ import {BrokerService} from '../../providers/broker-service-mock';
 })
 export class BrokerDetailPage {
 
-    broker: any;
+    broker: any={};
+    education:any={};
+    id;
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public service: BrokerService) {
-        this.broker = this.navParams.data;
-        service.findById(this.broker.id).then(
-            broker => this.broker = broker
+        this.id = this.navParams.data;
+        service.findById(this.id).then(
+        data =>{
+                console.log(data);
+                this.broker = data;
+                this.education=data.education;
+            }
         );
     }
 

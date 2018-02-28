@@ -20,7 +20,7 @@ let properties: Array<any> = [
         broker: {
             id: 1,
             name: "Tokunbo Ajayi",
-            title: "Senior Broker",
+            title: "Primary care doctor",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
@@ -44,9 +44,9 @@ let properties: Array<any> = [
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
-            id: 1,
+            id: 2,
             name: "Caroline Kingsley",
-            title: "Senior Broker",
+            title:"Internal medicine",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
@@ -70,9 +70,9 @@ let properties: Array<any> = [
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
-            id: 2,
+            id: 3,
             name: "Michael Jones",
-            title: "Senior Broker",
+            title: "Cardiologist",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
         },
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
@@ -96,9 +96,9 @@ let properties: Array<any> = [
         tags: "victorian",
         description: "Lorem ipsum dolor sit amet",
         broker: {
-            id: 3,
+            id: 4,
             name: "Jonathan Bradley",
-            title: "Senior Broker",
+            title: "Dentist",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg"
         },
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]

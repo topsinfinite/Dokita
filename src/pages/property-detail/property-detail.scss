@@ -2,12 +2,6 @@ ion-note {
   color: color($colors, primary) !important;
   font-size: 1.4rem !important;
 }
-ion-scroll{
-  background-color: rgb(64, 73, 13);
-  min-height:50px !important;
-  white-space: nowrap !important;
-  padding-bottom:4px !important;
-}
 ion-col{
 	padding: 16px;
 	border: solid 1px #DDD;
@@ -18,6 +12,6 @@ ion-col{
 	margin: 5px;
 }
 .btn-padding{
-  margin-bottom: 5px;
+  margin-bottom: 8px !important;
 }
  
