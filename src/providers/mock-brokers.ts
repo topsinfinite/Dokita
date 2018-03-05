@@ -12,6 +12,8 @@ let brokers: Array<any> = [
                 residences:"University of Maryland Medical Center / Family Medicine (2007)",
                 board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
             },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],   
+        insurance:["EHP","ATHENA","BlueCross"],
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
     },
     {
@@ -27,6 +29,8 @@ let brokers: Array<any> = [
                 residences:"University of Maryland Medical Center / Family Medicine (2007)",
                 board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
             },
+            affliation:["Johns Hopkins Hospital","University of Maryland"],   
+            insurance:["EHP","ATHENA","BlueCross"],
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
     },
     {
@@ -42,6 +46,8 @@ let brokers: Array<any> = [
                 residences:"University of Maryland Medical Center / Family Medicine (2007)",
                 board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
             },
+            affliation:["Johns Hopkins Hospital","University of Maryland"],   
+            insurance:["EHP","ATHENA","BlueCross"],
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg"
     },
     {
@@ -72,6 +78,8 @@ let brokers: Array<any> = [
                 residences:"University of Maryland Medical Center / Family Medicine (2007)",
                 board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
             },
+            affliation:["Johns Hopkins Hospital","University of Maryland"],   
+            insurance:["EHP","ATHENA","BlueCross"],
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
     },
     {
@@ -87,6 +95,8 @@ let brokers: Array<any> = [
                 residences:"University of Maryland Medical Center / Family Medicine (2007)",
                 board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
             },
+            affliation:["Johns Hopkins Hospital","University of Maryland"],   
+            insurance:["EHP","ATHENA","BlueCross"],
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg"
     },
     {
@@ -102,6 +112,8 @@ let brokers: Array<any> = [
                 residences:"University of Maryland Medical Center / Family Medicine (2007)",
                 board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
             },
+            affliation:["Johns Hopkins Hospital","University of Maryland"],   
+            insurance:["EHP","ATHENA","BlueCross"],
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michelle_lambert.jpg"
     },
     {
@@ -117,6 +129,8 @@ let brokers: Array<any> = [
                 residences:"University of Maryland Medical Center / Family Medicine (2007)",
                 board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
             }, 
+            affliation:["Johns Hopkins Hospital","University of Maryland"],   
+            insurance:["EHP","ATHENA","BlueCross"],
         picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/victor_ochoa.jpg"
     }
 ];

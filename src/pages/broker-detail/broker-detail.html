@@ -30,6 +30,14 @@
                     <p>Email</p>
                     <h2>{{broker.email}}</h2>
                 </a>
+                <ion-item text-wrap>
+                        <h2><ion-icon name="archive" item-right></ion-icon> Affliation</h2>
+                        <ion-note>{{broker.affliation}} </ion-note>
+                    </ion-item>   
+                    <ion-item text-wrap>
+                            <h2><ion-icon name="archive" item-right></ion-icon> Insurance</h2>
+                            <ion-note>{{broker.insurance}}</ion-note>
+                        </ion-item>
             <ion-item text-wrap>
                 <h2><ion-icon name="archive" item-right></ion-icon> Background</h2>
                 <ion-note>{{broker.background}}</ion-note>
@@ -37,7 +45,7 @@
             <ion-item text-wrap>
                 <h2><ion-icon name="archive" item-right></ion-icon> Education</h2>
                 <ion-note>
-                    <strong>Degrees:</strong> {{education.degree}}<br>
+                    <li><strong>Degrees:</strong> {{education.degree}}</li>
                     <strong>Residences:</strong> {{education.residences}}<br>
                     <strong>Board Certifications:</strong> {{education.board_certifications}}
                 </ion-note>

@@ -9,7 +9,7 @@
         Appointment Manager
       </ion-list-header>
       <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">
-        <ion-icon item-left [name]="menuItem.icon"></ion-icon>
+        <ion-icon item-left [name]="menuItem.icon" ></ion-icon>
         {{menuItem.title}}
       </button>
     </ion-list>

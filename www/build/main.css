@@ -8,6 +8,7 @@ ion-scroll{
 .ion-ios-add:before {
   content: "\f102";
 }
+
 .ion-ios-add-circle:before {
   content: "\f101";
 }
@@ -5122,7 +5123,6 @@ ion-header {
   z-index: 10;
   display: block;
   width: 100%;
-  background-color:#006c84;
 }
 
 ion-footer {
@@ -24320,7 +24320,7 @@ ion-navbar.toolbar {
   }
 }
 
-.menu-logo {
+menu-logo {
   height: 80px;
   padding:10px;
 }
@@ -24401,12 +24401,43 @@ ion-note {
   font-size: 1.4rem !important;
 }
 
+ion-col {
+  padding: 16px;
+  border: solid 1px #DDD;
+  background-color: #dd295b;
+  color: #FFF;
+  min-width: 150px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.btn-padding {
+  margin-bottom: 8px !important;
+}
+
 .searchbar-input {
   box-shadow: none !important;
 }
 
 ion-footer {
   padding: 8px 16px !important;
+}
+
+.segment {
+  background: #ffffff;
+}
+
+.toolbar-height {
+  height: 4em;
+  background: #ffffff;
+}
+
+.segment-button {
+  height: 4em !important;
+}
+
+.segment-button div {
+  font-size: 1.3em;
 }
 
 page-welcome {
