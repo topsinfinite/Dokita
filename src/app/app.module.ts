@@ -16,6 +16,7 @@ import {AboutPage} from '../pages/about/about';
 
 import {PropertyService} from "../providers/property-service-mock";
 import {BrokerService} from "../providers/broker-service-mock";
+import {TestCenterService} from "../providers/testcenter-service-mock";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -56,6 +57,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     PropertyService,
     BrokerService,
+    TestCenterService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
