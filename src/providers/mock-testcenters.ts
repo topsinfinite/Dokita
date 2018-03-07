@@ -1,4 +1,8 @@
-let testcenters: Array<any> = [
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+
+//let testcenters = Observable.of([
+    let testcenters:Array<any> =[
     {
         id: 1,
         name:"Howard County General hospital outpatient Laboratory",
@@ -69,7 +73,7 @@ let testcenters: Array<any> = [
         state: "MD",
         zip: "21044",
         price: "$130",
-        category:"lab",
+        category:"imaging",
         long: -71.10869,
         lat: 42.359103,
         test:[
@@ -93,5 +97,6 @@ let testcenters: Array<any> = [
         picture: "assets/img/labimg01.jpg"
     }
 
-]
+];
+
 export default testcenters

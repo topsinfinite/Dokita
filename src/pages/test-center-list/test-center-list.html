@@ -10,113 +10,73 @@
     <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"
-                   (ionCancel)="onCancel($event)"></ion-searchbar>
-  </ion-navbar>
-  <ion-toolbar no-border-top class="toolbar-height">
-      <ion-segment [(ngModel)]="testSeg" color="secondary" class="segment" (ionChange)="segmentChanged($event)">
-        <ion-segment-button value="lab">
-            <div>Laboratory</div>
-            <ion-icon name="finger-print"></ion-icon>
-          </ion-segment-button>
-        <ion-segment-button value="procedure">
-            <div>Procedure</div>
-          <ion-icon name="bookmark"></ion-icon>
-        </ion-segment-button>
-        <ion-segment-button value="imaging">
-            <div>Imaging</div>
-            <ion-icon name="camera"></ion-icon>
-          </ion-segment-button>
-      </ion-segment>
-    </ion-toolbar>
+     
+    <ion-title>Testing & Procedure</ion-title>
+    
+  
+    </ion-navbar>
 </ion-header>
 <ion-content  class="property-list">
+    <ion-toolbar no-border-top class="toolbar-height">
+        <ion-segment [(ngModel)]="testSeg" color="secondary" class="segment" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="lab">
+              <div>Laboratory</div>
+              <ion-icon name="finger-print"></ion-icon>
+            </ion-segment-button>
+          <ion-segment-button value="procedure">
+              <div>Procedure</div>
+            <ion-icon name="bookmark"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button value="imaging">
+              <div>Imaging</div>
+              <ion-icon name="camera"></ion-icon>
+            </ion-segment-button>
+        </ion-segment>
+       
+      </ion-toolbar>
+      <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"
+                       (ionCancel)="onCancel($event)"></ion-searchbar>
     <div [ngSwitch]="testSeg">
         <ion-list *ngSwitchCase="'lab'" class="property-list" >
+           <!--  <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"
+            (ionCancel)="onCancel($event)"></ion-searchbar>
+                </ion-navbar> -->
+        <ion-item *ngFor="let testcenter of testcenters">
           <button ion-item>
             <ion-thumbnail item-left >
-              <img src="assets/img/labimg01-thumbnail.jpg">
+              <img src="{{testcenter.thumbnail}}">
             </ion-thumbnail>
-            <h2 text-wrap>Howard County General hospital outpatient Laboratory</h2><br>
-            <h4>5755 Cedar Ln, Columbia, MD 21044</h4>
+            <h2 text-wrap>{{testcenter.name}}</h2>
+            <h4>{{testcenter.address}}, {{testcenter.city}}, {{testcenter.state}} {{testcenter.zip}}</h4>
             <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
           </button>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/labimg01-thumbnail.jpg">
-            </ion-thumbnail>
-            <h2 text-wrap>Howard County General hospital outpatient Laboratory</h2>
-            <h5>5755 Cedar Ln, Columbia, MD 21044</h5>
-            <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/labimg01-thumbnail.jpg">
-            </ion-thumbnail>
-            <h2 text-wrap>Howard County General hospital outpatient Laboratory</h2>
-            <h4>5755 Cedar Ln, Columbia, MD 21044</h4>
-            <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/labimg01-thumbnail.jpg">
-            </ion-thumbnail>
-            <h2>Otto</h2>
-          </ion-item>
+        </ion-item>
         </ion-list>
     
-        <ion-list *ngSwitchCase="'procedure'">
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-kitten-1.jpg">
-            </ion-thumbnail>
-            <h2>Luna</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-kitten-1.jpg">
-            </ion-thumbnail>
-            <h2>Milo</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-kitten-1.jpg">
-            </ion-thumbnail>
-            <h2>Bandit</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-kitten-1.jpg">
-            </ion-thumbnail>
-            <h2>Nala</h2>
-          </ion-item>
+        <ion-list *ngSwitchCase="'procedure'" class="property-list">
+          <ion-item *ngFor="let testcenter of testcenters">
+              <button ion-item>
+                  <ion-thumbnail item-left >
+                    <img src="{{testcenter.thumbnail}}">
+                  </ion-thumbnail>
+                  <h2 text-wrap>{{testcenter.name}}</h2>
+                  <h4>{{testcenter.address}}, {{testcenter.city}}, {{testcenter.state}} {{testcenter.zip}}</h4>
+                  <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
+                </button>
+                </ion-item>
         </ion-list>
     
         <ion-list *ngSwitchCase="'imaging'">
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-duckling-1.jpg">
-            </ion-thumbnail>
-            <h2>Daffy</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-duckling-1.jpg">
-            </ion-thumbnail>
-            <h2>Huey</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-duckling-1.jpg">
-            </ion-thumbnail>
-            <h2>Dewey</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-left>
-              <img src="assets/img/thumbnail-duckling-1.jpg">
-            </ion-thumbnail>
-            <h2>Louie</h2>
-          </ion-item>
+            <ion-item *ngFor="let testcenter of testcenters">
+                <button ion-item>
+                    <ion-thumbnail item-left >
+                      <img src="{{testcenter.thumbnail}}">
+                    </ion-thumbnail>
+                    <h2 text-wrap>{{testcenter.name}}</h2>
+                    <h4>{{testcenter.address}}, {{testcenter.city}}, {{testcenter.state}} {{testcenter.zip}}</h4>
+                    <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
+                  </button>
+                  </ion-item>
         </ion-list>
       </div>
 </ion-content>
