@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Broker</ion-title>
+        <ion-title>Physician Details</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -21,20 +21,38 @@
                 <h2>{{broker.phone}}</h2>
             </a>
             <a href="tel:{{broker.phone}}" ion-item>
-                <ion-icon name="call" item-left></ion-icon>
-                <p>Call Mobile</p>
-                <h2>{{broker.mobilePhone}}</h2>
-            </a>
-            <a href="tel:{{broker.phone}}" ion-item>
-                <ion-icon name="text" item-left></ion-icon>
-                <p>Text</p>
-                <h2>{{broker.mobilePhone}}</h2>
-            </a>
+                    <ion-icon name="call" item-left></ion-icon>
+                    <p>Call Mobile</p>
+                    <h2>{{broker.mobilePhone}}</h2>
+                </a>
             <a href="mailto:{{broker.email}}" ion-item>
-                <ion-icon name="mail" item-left></ion-icon>
-                <p>Email</p>
-                <h2>{{broker.email}}</h2>
-            </a>
+                    <ion-icon name="mail" item-left></ion-icon>
+                    <p>Email</p>
+                    <h2>{{broker.email}}</h2>
+                </a>
+                <ion-item text-wrap>
+                        <h2><ion-icon name="archive" item-right></ion-icon> Affliation</h2>
+                        <ion-note>{{broker.affliation}} </ion-note>
+                    </ion-item>   
+                    <ion-item text-wrap>
+                            <h2><ion-icon name="archive" item-right></ion-icon> Insurance</h2>
+                            <ion-note>{{broker.insurance}}</ion-note>
+                        </ion-item>
+            <ion-item text-wrap>
+                <h2><ion-icon name="archive" item-right></ion-icon> Background</h2>
+                <ion-note>{{broker.background}}</ion-note>
+            </ion-item>
+            <ion-item text-wrap>
+                <h2><ion-icon name="archive" item-right></ion-icon> Education</h2>
+                <ion-note>
+                    <li><strong>Degrees:</strong> {{education.degree}}</li>
+                    <strong>Residences:</strong> {{education.residences}}<br>
+                    <strong>Board Certifications:</strong> {{education.board_certifications}}
+                </ion-note>
+        
+            </ion-item>
+            
+        
         </ion-list>
 
     </ion-card>

@@ -8,8 +8,13 @@
       <ion-list-header class="menu-item-color menu-header-item-color">
         <div class="menu-header-item-color">Appointment Manager</div>
       </ion-list-header>
+<<<<<<< HEAD
       <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)" class="menu-item-color">
         <ion-icon item-left [name]="menuItem.icon"></ion-icon>
+=======
+      <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">
+        <ion-icon item-left [name]="menuItem.icon" ></ion-icon>
+>>>>>>> a359d4c616286a5da763033d26d27f8ad3e6ec37
         {{menuItem.title}}
       </button>
     </ion-list>

@@ -20,17 +20,25 @@
                 <ion-datetime min="2018" [(ngModel)]="appdate" (ionChange)="changeDate($event)"></ion-datetime>
                 <ion-icon item-right name="arrow-forward" ></ion-icon>
             </ion-item>
-        <ion-scroll scrollX="true" class="item" *ngIf="isSet">
-                <button ion-button class="btn-padding" *ngFor="let itm of schedules" (click)="logAppointment(itm)">{{itm}}</button>
-        </ion-scroll>
+            <ion-item *ngIf="isSet" >
+                    <ion-label>Purpose of visit</ion-label>
+                    <ion-select [(ngModel)]="appmtType" interface="action-sheet" item-right>
+                    <ion-option value="New Problem" selected>New Problem</ion-option>
+                    <ion-option value="Follow-up">Follow up</ion-option>
+                    <ion-option value="Vaccination">Vaccination</ion-option>
+                    <ion-option value="Pre Op">Pre Op</ion-option>
+                    <ion-option value="Screening">Screening</ion-option>
+                    </ion-select>
+            </ion-item>
+            <div *ngIf="isSet" ion-item>
+                <h3>Pick Appointment Time</h3>
+            <ion-scroll scrollX="true" class="item" >
+                   <button ion-button small class="btn-padding" *ngFor="let itm of schedules" (click)="logAppointment(itm)">{{itm}}</button>
+            </ion-scroll>
+           </div>
         </ion-list>
         <ion-list>
             
-            <ion-item>
-                <ion-icon item-left name="moon"></ion-icon>
-                <h3>Bedrooms</h3>
-                <ion-note item-right>{{property.bedrooms}}</ion-note>
-            </ion-item>
             <button ion-item (click)="goAppointment()" clear >
                 <ion-icon item-left name="leaf"></ion-icon>
                 <h3>Pending Appointments</h3>
@@ -42,7 +50,12 @@
                 <h3>Cost of Visit</h3>
                 <ion-note item-right>{{property.price}}</ion-note>
             </ion-item>
-            <button ion-item (click)="openBrokerDetail(property.broker)">
+           <!--  <ion-item>
+                    <ion-icon item-left name="moon"></ion-icon>
+                    <h3>Bedrooms</h3>
+                    <ion-note item-right>{{property.bedrooms}}</ion-note>
+                </ion-item> -->
+            <button ion-item (click)="openBrokerDetail(property.broker.id)">
                 <ion-avatar item-left>
                     <img src="{{property.broker.picture}}"/>
                 </ion-avatar>

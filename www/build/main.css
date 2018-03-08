@@ -24331,8 +24331,12 @@ ion-navbar.toolbar {
 
 .menu-logo {
   height: 80px;
+<<<<<<< HEAD
   padding-left: 20px;
   padding-top: 20px;
+=======
+  padding: 10px;
+>>>>>>> a359d4c616286a5da763033d26d27f8ad3e6ec37
 }
 
 .about-header {
@@ -24411,6 +24415,7 @@ ion-note {
   font-size: 1.4rem !important;
 }
 
+<<<<<<< HEAD
 ion-scroll {
   background-color: #40490d;
   min-height: 50px !important;
@@ -24418,6 +24423,8 @@ ion-scroll {
   padding-bottom: 4px !important;
 }
 
+=======
+>>>>>>> a359d4c616286a5da763033d26d27f8ad3e6ec37
 ion-col {
   padding: 16px;
   border: solid 1px #DDD;
@@ -24429,7 +24436,19 @@ ion-col {
 }
 
 .btn-padding {
+<<<<<<< HEAD
   margin-bottom: 5px;
+=======
+  margin-bottom: 8px !important;
+}
+
+ion-scroll {
+  background-color: #40490d;
+  min-height: 40px !important;
+  white-space: nowrap !important;
+  padding-bottom: 4px !important;
+  font-size: 1em;
+>>>>>>> a359d4c616286a5da763033d26d27f8ad3e6ec37
 }
 
 .searchbar-input {
@@ -24440,6 +24459,7 @@ ion-footer {
   padding: 8px 16px !important;
 }
 
+<<<<<<< HEAD
 .doctor-card-text {
   position: relative !important;
   top: -117px !important;
@@ -24500,6 +24520,38 @@ ion-footer {
 .item-md.item-block .item-inner {
   padding: 0px !important;
   border-bottom: 0px !important;
+=======
+.searchbar-input {
+  box-shadow: none !important;
+}
+
+.segment {
+  background: #ffffff;
+}
+
+.toolbar-height {
+  height: 4em;
+  background: #ffffff;
+}
+
+.segment-button {
+  height: 4em !important;
+}
+
+.segment-button div {
+  font-size: 1.3em;
+}
+
+.label-ios h2 {
+  margin: 0 0 3px !important;
+}
+
+.item-ios h3, .item-ios h4, .item-ios h5, .item-ios h6, .item-ios p {
+  margin-bottom: 6px !important;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: normal;
+>>>>>>> a359d4c616286a5da763033d26d27f8ad3e6ec37
 }
 
 page-welcome {

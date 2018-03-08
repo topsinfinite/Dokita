@@ -11,10 +11,13 @@ import {BrokerListPage} from '../pages/broker-list/broker-list';
 import {BrokerDetailPage} from '../pages/broker-detail/broker-detail';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {AppointmentListPage} from '../pages/appointment-list/appointment-list';
+import {TestCenterListPage} from '../pages/test-center-list/test-center-list';
+import {TestCenterDetailPage} from '../pages/testcenter-detail/testcenter-detail';
 import {AboutPage} from '../pages/about/about';
 
 import {PropertyService} from "../providers/property-service-mock";
 import {BrokerService} from "../providers/broker-service-mock";
+import {TestCenterService} from "../providers/testcenter-service-mock";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,7 +32,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FavoriteListPage,
     BrokerListPage,
     BrokerDetailPage,
-    AppointmentListPage
+    AppointmentListPage,
+    TestCenterListPage,
+    TestCenterDetailPage
   ],
   imports: [
     BrowserModule,
@@ -46,13 +51,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FavoriteListPage,
     BrokerListPage,
     BrokerDetailPage,
-    AppointmentListPage
+    AppointmentListPage,
+    TestCenterListPage,
+    TestCenterDetailPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     PropertyService,
     BrokerService,
+    TestCenterService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
