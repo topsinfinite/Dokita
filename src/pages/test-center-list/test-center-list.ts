@@ -1,32 +1,29 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, Platform } from 'ionic-angular';
 import {TestCenterService} from "../../providers/testcenter-service-mock";
+import {TestCenterDetailPage} from '../testcenter-detail/testcenter-detail';
 import 'rxjs/add/operator/catch';
 
-/**
- * Generated class for the TestCenterListPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 @Component({
   selector: 'page-test-center-list',
   templateUrl: 'test-center-list.html',
 })
 export class TestCenterListPage {
   searchKey: string = "";
-  testSeg: string = "lab";
+  testCat: string = "lab";
   isAndroid: boolean = false;
 
   testcenters: Array<any>=[];
 
   constructor(public navCtrl: NavController,public service: TestCenterService, public navParams: NavParams, public platform:Platform) {
-    this.findByCategory(this.testSeg);
+    this.findByCategory(this.testCat);
+    this.testCat="lab";
   }
 
   ionViewDidLoad() {
-   // this.findByCategory(this.testSeg);
-    console.log('ionViewDidLoad TestCenterListPage');
+    //this.findByCategory(this.testCat);
+    //console.log('ionViewDidLoad TestCenterListPage');
   }
   findAll() {
     this.service.findAll()
@@ -38,16 +35,8 @@ export class TestCenterListPage {
     .then(data=>this.testcenters=data)
     .catch(error=>alert(error))
   } 
-  /* findByCategory(category:string){
-    this.service.findByCategoryObservable(category)
-    .subscribe(data=>{
-      this.testcenters=data;
-    },
-    error=>{console.log(error)})
-     
-  }  */
-  onInput(event) {
-    this.service.findByName(this.searchKey,this.testSeg)
+  findByName(){
+    this.service.findByName(this.searchKey,this.testCat)
             .then(data => {
                 this.testcenters = data;
                 /* if (this.viewMode === "map") {
@@ -56,13 +45,27 @@ export class TestCenterListPage {
             })
             .catch(error => alert(JSON.stringify(error)));
   }
+  
+  onInput(event) {
+     this.findByName();
+  }
   onCancel(event){
-
+   this.findByCategory(this.testCat);
   }
   segmentChanged(event)
   {
-   console.log(event);
-   this.testSeg=event.value;
-   this.findByCategory(this.testSeg)
+   this.testCat=event.value;
+   this.findByCategory(event.value);
   }
+  openTestCenterDetail(testcenter:any){
+    this.navCtrl.push(TestCenterDetailPage, testcenter);
+  }
+  /* findByCategory(category:string){
+    this.service.findByCategoryObservable(category)
+    .subscribe(data=>{
+      this.testcenters=data;
+    },
+    error=>{console.log(error)})
+     
+  }  */
 }

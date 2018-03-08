@@ -12,13 +12,12 @@
     </button>
      
     <ion-title>Testing & Procedure</ion-title>
-    
   
     </ion-navbar>
 </ion-header>
 <ion-content  class="property-list">
     <ion-toolbar no-border-top class="toolbar-height">
-        <ion-segment [(ngModel)]="testSeg" color="secondary" class="segment" (ionChange)="segmentChanged($event)">
+        <ion-segment [(ngModel)]="testCat" color="secondary" class="segment" (ionChange)="segmentChanged($event)">
           <ion-segment-button value="lab">
               <div>Laboratory</div>
               <ion-icon name="finger-print"></ion-icon>
@@ -36,26 +35,23 @@
       </ion-toolbar>
       <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"
                        (ionCancel)="onCancel($event)"></ion-searchbar>
-    <div [ngSwitch]="testSeg">
-        <ion-list *ngSwitchCase="'lab'" class="property-list" >
-           <!--  <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"
-            (ionCancel)="onCancel($event)"></ion-searchbar>
-                </ion-navbar> -->
-        <ion-item *ngFor="let testcenter of testcenters">
-          <button ion-item>
+    <div [ngSwitch]="testCat">
+        <ion-list *ngSwitchCase="'lab'" >
+         
+          <button ion-item *ngFor="let testcenter of testcenters" (click)="openTestCenterDetail(testcenter)" >
             <ion-thumbnail item-left >
               <img src="{{testcenter.thumbnail}}">
             </ion-thumbnail>
             <h2 text-wrap>{{testcenter.name}}</h2>
-            <h4>{{testcenter.address}}, {{testcenter.city}}, {{testcenter.state}} {{testcenter.zip}}</h4>
+            <p>{{testcenter.address}}, {{testcenter.city}}, {{testcenter.state}} {{testcenter.zip}}</p>
             <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
           </button>
-        </ion-item>
+         
         </ion-list>
     
-        <ion-list *ngSwitchCase="'procedure'" class="property-list">
-          <ion-item *ngFor="let testcenter of testcenters">
-              <button ion-item>
+        <ion-list *ngSwitchCase="'procedure'">
+          <ion-item>
+              <button ion-item *ngFor="let testcenter of testcenters" (click)="openTestCenterDetail(testcenter)">
                   <ion-thumbnail item-left >
                     <img src="{{testcenter.thumbnail}}">
                   </ion-thumbnail>
@@ -63,12 +59,12 @@
                   <h4>{{testcenter.address}}, {{testcenter.city}}, {{testcenter.state}} {{testcenter.zip}}</h4>
                   <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
                 </button>
-                </ion-item>
+              </ion-item>    
         </ion-list>
     
         <ion-list *ngSwitchCase="'imaging'">
-            <ion-item *ngFor="let testcenter of testcenters">
-                <button ion-item>
+             
+                <button ion-item *ngFor="let testcenter of testcenters" (click)="openTestCenterDetail(testcenter)">
                     <ion-thumbnail item-left >
                       <img src="{{testcenter.thumbnail}}">
                     </ion-thumbnail>
@@ -76,7 +72,7 @@
                     <h4>{{testcenter.address}}, {{testcenter.city}}, {{testcenter.state}} {{testcenter.zip}}</h4>
                     <p> <ion-icon name="call"></ion-icon> (410) 740-7890</p>
                   </button>
-                  </ion-item>
+                  
         </ion-list>
       </div>
 </ion-content>

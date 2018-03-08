@@ -17,8 +17,17 @@ export class TestCenterService {
     
       findByName(searchKey: string, category:string) {
         let key: string = searchKey.toUpperCase();
-        return Promise.resolve(testcenters.filter((testcenter: any) =>
-          testcenter.category===category &&  (testcenter.name +  ' ' +testcenter.address +  ' ' + testcenter.city + ' ' + testcenter.test.testname).toUpperCase().indexOf(key) > -1));
+        return Promise.resolve(testcenters.filter((testcenter: any) =>{
+          let test:any=[];let rstval:boolean=false;
+          test=testcenter.test;
+          if(test!==null && key!==""){
+            test.forEach(element => {
+              if(element.testname.toUpperCase().indexOf(key)>-1)
+              rstval=true;
+            });
+          }
+         return ((rstval)||(testcenter.category===category &&  (testcenter.name +  ' ' 
+          +testcenter.address +  ' ' + testcenter.city).toUpperCase().indexOf(key) > -1))}));
       }
       findByCategory(category:string){
         let key: string = category.toUpperCase();
