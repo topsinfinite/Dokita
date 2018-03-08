@@ -1,9 +1,3 @@
-ion-scroll{
-  background-color: rgb(64, 73, 13);
-  min-height:50px !important;
-  white-space: nowrap !important;
-  padding-bottom:4px !important;
-}
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -5122,7 +5116,6 @@ ion-header {
   z-index: 10;
   display: block;
   width: 100%;
-  background-color:#006c84;
 }
 
 ion-footer {
@@ -24320,9 +24313,26 @@ ion-navbar.toolbar {
   }
 }
 
+.menu-bg-color {
+  background-color: #006d84 !important;
+}
+
+.menu-item-color {
+  background-color: transparent !important;
+  color: #D5E003 !important;
+}
+
+.menu-header-item-color {
+  background-color: #1ee49f;
+  padding: 13px;
+  color: #016d84;
+  border-radius: 5px 0px 0px 5px;
+}
+
 .menu-logo {
   height: 80px;
-  padding:10px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .about-header {
@@ -24401,12 +24411,95 @@ ion-note {
   font-size: 1.4rem !important;
 }
 
+ion-scroll {
+  background-color: #40490d;
+  min-height: 50px !important;
+  white-space: nowrap !important;
+  padding-bottom: 4px !important;
+}
+
+ion-col {
+  padding: 16px;
+  border: solid 1px #DDD;
+  background-color: #dd295b;
+  color: #FFF;
+  min-width: 150px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.btn-padding {
+  margin-bottom: 5px;
+}
+
 .searchbar-input {
   box-shadow: none !important;
 }
 
 ion-footer {
   padding: 8px 16px !important;
+}
+
+.doctor-card-text {
+  position: relative !important;
+  top: -117px !important;
+  padding: 10px !important;
+}
+
+.doctor-card-text h2 {
+  font-weight: bold !important;
+  font-size: 18px !important;
+  color: white !important;
+}
+
+.doctor-card-button {
+  position: relative;
+  text-align: center;
+  top: -58px;
+}
+
+.doctor-card-button .button-md {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  width: 80%;
+  padding: 17px;
+  color: #d5e002;
+  background-color: #016d84;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-size: 12px;
+  overflow: hidden;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doctor-card {
+  margin-bottom: 5px !important;
+  width: 95% !important;
+  padding: 0px !important;
+  height: 225px;
+}
+
+.doctor-card .item-md {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.doctor-card-box {
+  padding-top: 50px;
+}
+
+.label-md {
+  margin: 0px !important;
+}
+
+.item-wrapper {
+  margin-top: 10px;
+  margin-left: 14px;
+  width: 95%;
+}
+
+.item-md.item-block .item-inner {
+  padding: 0px !important;
+  border-bottom: 0px !important;
 }
 
 page-welcome {
