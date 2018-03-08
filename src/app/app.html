@@ -1,34 +1,35 @@
 <ion-menu [content]="content">
 
-  <ion-content>
+  <ion-content class="menu-bg-color">
 
     <img src="assets/img/dreamhouse-logo.svg" class="menu-logo"/>
-     
-    <ion-list>
-      <ion-list-header>
-        Appointment Manager
-      </ion-list-header>
-      <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">
-        <ion-icon item-left [name]="menuItem.icon" ></ion-icon>
-        {{menuItem.title}}
-      </button>
-    </ion-list>
 
     <ion-list>
-      <ion-list-header>
-        Help
+      <ion-list-header class="menu-item-color menu-header-item-color">
+        <div class="menu-header-item-color">Appointment Manager</div>
       </ion-list-header>
-      <button menuClose ion-item *ngFor="let menuItem of helpMenuItems" (click)="openPage(menuItem)">
+
+      <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)" class="menu-item-color">
         <ion-icon item-left [name]="menuItem.icon"></ion-icon>
         {{menuItem.title}}
       </button>
     </ion-list>
 
     <ion-list>
-      <ion-list-header>
-        Account
+      <ion-list-header class="menu-item-color">
+        <div class="menu-header-item-color">Help</div>
       </ion-list-header>
-      <button menuClose ion-item *ngFor="let menuItem of accountMenuItems" (click)="openPage(menuItem)">
+      <button menuClose ion-item *ngFor="let menuItem of helpMenuItems" (click)="openPage(menuItem)" class="menu-item-color">
+        <ion-icon item-left [name]="menuItem.icon"></ion-icon>
+        {{menuItem.title}}
+      </button>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header class="menu-item-color">
+        <div class="menu-header-item-color">Account</div>
+      </ion-list-header>
+      <button menuClose ion-item *ngFor="let menuItem of accountMenuItems" (click)="openPage(menuItem)" class="menu-item-color">
         <ion-icon item-left [name]="menuItem.icon"></ion-icon>
         {{menuItem.title}}
       </button>

@@ -14,16 +14,22 @@
     <ion-list *ngIf="viewMode==='list'">
 
         <ion-item-sliding *ngFor="let property of properties">
-            <button ion-item (click)="openPropertyDetail(property)">
-                <ion-thumbnail item-left>
+            <div ion-item (click)="openPropertyDetail(property)" class="doctor-card">
+<div class="doctor-card-box">
                     <img src="{{property.thumbnail}}"/>
-                </ion-thumbnail>
-                <h2>{{property.name}}</h2>
-                <h5>{{property.title}}</h5>
-                <p>{{property.city}}, {{property.state}}. Rating: 
-                  <ion-icon color="energized" item-right name="star" *ngFor="let n of getRating(property.rating)"></ion-icon>
+          </div>
+                  <div class="doctor-card-text">
+                    <h2>{{property.name}}</h2>
+                    <h5>{{property.title}}</h5>
+                    <p>{{property.city}}, {{property.state}}.</p>
+                  </div>
+              <div class="doctor-card-button">
+                  <button ion-button>Book {{property.name}} </button>
+                <p>Rating:
+                  <ion-icon color="energized" item-right rating-star name="star" *ngFor="let n of getRating(property.rating)"></ion-icon>
                 </p>
-            </button>
+              </div>
+            </div>
             <ion-item-options>
                 <button danger (click)="deleteItem(property)">Delete</button>
             </ion-item-options>
