@@ -20,9 +20,9 @@
               <ion-icon item-right name="arrow-forward" ></ion-icon>
           </ion-item>
           <ion-item *ngIf="isSet" >
-                  <ion-label>What Type of Test/Procedure</ion-label>
+                  <ion-label>Select Test/Procedure</ion-label>
                   <ion-select [(ngModel)]="appmtType" interface="action-sheet" item-right>
-                  <ion-option *ngFor="let test of tests">{{test.name}}-[{{test.cost}}]</ion-option>
+                  <ion-option *ngFor="let test of tests">{{test.testname}}-[Cost-{{test.cost}}]</ion-option>
                    
                   </ion-select>
           </ion-item>
