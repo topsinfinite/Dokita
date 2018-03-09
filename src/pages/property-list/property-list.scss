@@ -5,65 +5,68 @@
 ion-footer {
   padding: 8px 16px !important;
 }
+.property-list-content{
 
-.doctor-card-text {
-  position:relative !important;
-  top: -117px !important;
-  padding: 10px !important;
-}
+    .doctor-card-text {
+      position:relative !important;
+      top: -117px !important;
+      padding: 10px !important;
+    }
 
-.doctor-card-text  h2 {
-  font-weight: bold !important;
-  font-size: 18px !important;
-  color: white !important;
-}
+    .doctor-card-text  h2 {
+      font-weight: bold !important;
+      font-size: 18px !important;
+      color: white !important;
+    }
 
-.doctor-card-button {
-  position:relative;
-  text-align: center;
-  top: -58px;
-}
+    .doctor-card-button {
+      position:relative;
+      text-align: center;
+      top: -58px;
+    }
 
-.doctor-card-button .button-md {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  width:80%;
-  padding:17px;
-  color: #d5e002;
-  background-color: #016d84;
-  text-transform: uppercase;
-  border-radius: 50px;
-  font-size: 12px;
-  overflow: hidden;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    .doctor-card-button button {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+      width:80% !important;
+      padding:18px !important;
+      color: #d5e002 !important;
+      background-color: #016d84 !important;
+      text-transform: uppercase;
+      border-radius: 50px !important;
+      font-size: 12px !important;
+      font-weight: bold !important;
+      overflow: hidden;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 
-.doctor-card {
- margin-bottom:5px !important;
- width:95% !important;
- padding:0px !important;
- height: 225px;
-}
+    .doctor-card {
+    margin-bottom:5px !important;
+    width:95% !important;
+    padding:0px !important;
+    height: 225px !important;
+    }
 
-.doctor-card .item-md {
-  border-radius:8px !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
-}
-.doctor-card-box{
-padding-top:50px;
+    .doctor-card .item-md {
+      border-radius:8px !important;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+    }
+    .doctor-card-box{
+    padding-top:50px !important;
 
-}
-.label-md {
-  margin: 0px !important;
-}
+    } 
+    .label-md {
+      margin: 0px !important;
+    }
 
-.item-wrapper {
-  margin-top: 10px;
-  margin-left: 14px;
-  width: 95%;
-}
+    .item-wrapper {
+      margin-top: 10px !important;
+      margin-left: 14px !important;
+      width: 95% !important;
+    }
 
-.item-md.item-block .item-inner {
-  padding: 0px !important;
-  border-bottom: 0px !important;
+    .item-md.item-block .item-inner {
+      padding: 0px !important;
+      border-bottom: 0px !important;
+    }  
 }

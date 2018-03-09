@@ -9,13 +9,13 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content class="property-list">
+<ion-content class="property-list-content">
 
     <ion-list *ngIf="viewMode==='list'">
 
         <ion-item-sliding *ngFor="let property of properties">
             <div ion-item (click)="openPropertyDetail(property)" class="doctor-card">
-<div class="doctor-card-box">
+        <div class="doctor-card-box">
                     <img src="{{property.thumbnail}}"/>
           </div>
                   <div class="doctor-card-text">
