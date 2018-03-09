@@ -55,7 +55,6 @@ ion-footer {
     }
     .doctor-card-box{
     padding-top:50px !important;
-
     } 
     .label-md {
       margin: 0px !important;
@@ -67,7 +66,7 @@ ion-footer {
       width: 95% !important;
     }
 
-    .item-md.item-block .item-inner {
+    .item-md, .item-block, .item-inner {
       padding: 0px !important;
       border-bottom: 0px !important;
     }  

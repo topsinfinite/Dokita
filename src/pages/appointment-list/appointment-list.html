@@ -8,7 +8,8 @@
     </ion-header>
     
     <ion-content>
-        <ion-list>
+    <div [ngSwitch]="Category">
+        <ion-list *ngSwitchCase="'Doctor'">
             <ion-item-sliding *ngFor="let appointment of appointments">
                 <button ion-item (click)="itemTapped(appointment)">
                     <ion-thumbnail item-left>
@@ -21,9 +22,33 @@
                     <h3>Date: {{appointment.appdate}} | Time: {{appointment.apptime}}</h3>
                 </button>
                 <ion-item-options>
-                    <button danger (click)="deleteItem(appointment)">Delete</button>
+                    <button secondary (click)="editItem(appointment)">Edit</button>
+                </ion-item-options>
+                <ion-item-options>
+                    <button danger (click)="deleteItem(appointment)">Cancel</button>
                 </ion-item-options>
             </ion-item-sliding>
         </ion-list>
+        <ion-list *ngSwitchCase="'Testing'">
+                <ion-item-sliding *ngFor="let appointment of appointments">
+                    <button ion-item detail-none (click)="itemTapped(appointment)">
+                        <ion-thumbnail item-left>
+                            <img src="{{appointment.testcenter.thumbnail}}"/>
+                        </ion-thumbnail>
+                        <h1>{{appointment.testcenter.name}}</h1>
+                        <h2>{{appointment.testcenter.test[0].testname}}</h2>
+                        <p>{{appointment.testcenter.city}}, {{appointment.testcenter.state}} ∙ {{appointment.doctor.price}}</p>
+                        <h3>Appointment Type: {{appointment.apptype}}</h3>
+                        <h3>Date: {{appointment.appdate}} | Time: {{appointment.apptime}}</h3>
+                    </button>
+                    <ion-item-options>
+                        <button secondary (click)="editItem(appointment)">Edit</button>
+                    </ion-item-options>
+                    <ion-item-options>
+                        <button danger (click)="deleteItem(appointment)">Cancel</button>
+                    </ion-item-options>
+                </ion-item-sliding>
+            </ion-list>
+    </div>
     </ion-content>
     

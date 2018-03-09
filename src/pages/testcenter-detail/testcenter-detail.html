@@ -35,16 +35,15 @@
       </ion-list>
       <ion-list>
           
-          <button ion-item (click)="goAppointment()" clear >
+          <button ion-item (click)="goAppointment()" detail-none >
               <ion-icon item-left name="leaf"></ion-icon>
               <h3>Pending Appointments</h3>
-
-              <ion-note item-right>{{appointmentCount}}</ion-note>
+              <ion-note item-right>{{appointmentCount}} Count(s)</ion-note>
           </button>
           <ion-item>
               <ion-icon item-left name="pricetag"></ion-icon>
               <h3>Category</h3>
-              <ion-note item-right>{{testcenter.Category}}</ion-note>
+              <ion-note item-right>{{getCategory()}}</ion-note>
           </ion-item>
          <!--  <ion-item>
                   <ion-icon item-left name="moon"></ion-icon>
