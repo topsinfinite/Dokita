@@ -1,23 +1,30 @@
 
-
-.menu-bg-color{
+ .menu-bg-color {
   background-color: #006d84 !important;
-}
+          .menu-item-color {
+          background-color: transparent !important;
+          color: #D5E003 !important;
+          border-bottom:0px !important;
+          }
 
-.menu-item-color {
-  background-color: transparent !important;
-  color: #D5E003 !important;
-}
+          .menu-header-item-color {
+          background-color: #1ee49f;
+          padding: 13px;
+          color: #016d84;
+          border-radius: 5px 0px 0px 5px;
+          }
 
-.menu-header-item-color {
-    background-color: #1ee49f;
-    padding: 13px;
-    color: #016d84;
-    border-radius: 5px 0px 0px 5px;
-}
-
-.menu-logo {
-  height: 80px;
-  padding-left: 20px;
-  padding-top: 20px;
+          .menu-logo {
+          height: 80px;
+          padding-left: 20px;
+          padding-top: 20px;
+          }
+          .list-ios .item-block .item-inner{
+          border-bottom: 0px !important;
+          }
+          
+          .item-md, .item-block, .item-inner {
+          padding: 0px !important;
+          border-bottom: 0px !important;
+          }
 }

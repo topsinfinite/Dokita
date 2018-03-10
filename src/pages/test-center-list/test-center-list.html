@@ -33,7 +33,7 @@
         </ion-segment>
        
       </ion-toolbar>
-      <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"
+      <ion-searchbar animated="true" autocomplete="on" [(ngModel)]="searchKey" (ionInput)="onInput($event)" placeholder="Search Laboratory/Procedure/Test"
                        (ionCancel)="onCancel($event)"></ion-searchbar>
     <div [ngSwitch]="testCat">
         <ion-list *ngSwitchCase="'lab'" >

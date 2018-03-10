@@ -40,11 +40,19 @@ export class PropertyService {
     return Promise.resolve();
   }
   addAppointment(appDetail:any){
-    this.appointments.push({doctor:appDetail.doctor,appdate:appDetail.appdate,apptime:appDetail.apptime,apptype:appDetail.apptype});
-    return Promise.resolve()
-  }
-  getAppointments(){
+    if(appDetail!==null){
+      if(appDetail.category==="Doctor"){
+        this.appointments.push({category:appDetail.category,testcenter:{}, doctor:appDetail.doctor,appdate:appDetail.appdate,apptime:appDetail.apptime,apptype:appDetail.apptype});
+      }else{
+        this.appointments.push({category:appDetail.category,doctor:{}, testcenter:appDetail.testcenter,appdate:appDetail.appdate,apptime:appDetail.apptime,apptype:appDetail.apptype});
+      }
     return Promise.resolve(this.appointments);
+    }
+  }
+  getAppointments(cat:string){
+    return Promise.resolve(this.appointments.filter((appdetail:any)=>{
+      return (appdetail.category).toUpperCase().indexOf(cat.toUpperCase()) > -1; 
+    }));
   }
   removeAppointment(appDetail){
     let index = this.appointments.indexOf(appDetail);

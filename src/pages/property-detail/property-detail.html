@@ -4,7 +4,7 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="property-detail">
         
         
     <ion-card *ngIf="property.id">
@@ -38,12 +38,11 @@
            </div>
         </ion-list>
         <ion-list>
-            
-            <button ion-item (click)="goAppointment()" clear >
+            <button ion-item detail-none (click)="goAppointment()" clear >
                 <ion-icon item-left name="leaf"></ion-icon>
                 <h3>Pending Appointments</h3>
 
-                <ion-note item-right>{{appointmentCount}}</ion-note>
+                <ion-note item-right>{{appointmentCount}} Count(s)</ion-note>
             </button>
             <ion-item>
                 <ion-icon item-left name="pricetag"></ion-icon>

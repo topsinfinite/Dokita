@@ -20,9 +20,9 @@
               <ion-icon item-right name="arrow-forward" ></ion-icon>
           </ion-item>
           <ion-item *ngIf="isSet" >
-                  <ion-label>What Type of Test/Procedure</ion-label>
+                  <ion-label>Select Test/Procedure</ion-label>
                   <ion-select [(ngModel)]="appmtType" interface="action-sheet" item-right>
-                  <ion-option *ngFor="let test of tests">{{test.name}}-[{{test.cost}}]</ion-option>
+                  <ion-option *ngFor="let test of tests">{{test.testname}}-[Cost-{{test.cost}}]</ion-option>
                    
                   </ion-select>
           </ion-item>
@@ -35,16 +35,15 @@
       </ion-list>
       <ion-list>
           
-          <button ion-item (click)="goAppointment()" clear >
+          <button ion-item (click)="goAppointment()" detail-none >
               <ion-icon item-left name="leaf"></ion-icon>
               <h3>Pending Appointments</h3>
-
-              <ion-note item-right>{{appointmentCount}}</ion-note>
+              <ion-note item-right>{{appointmentCount}} Count(s)</ion-note>
           </button>
           <ion-item>
               <ion-icon item-left name="pricetag"></ion-icon>
               <h3>Category</h3>
-              <ion-note item-right>{{testcenter.Category}}</ion-note>
+              <ion-note item-right>{{getCategory()}}</ion-note>
           </ion-item>
          <!--  <ion-item>
                   <ion-icon item-left name="moon"></ion-icon>
@@ -61,8 +60,11 @@
       </ion-list>
 
       <ion-item>
-          <button ion-button icon-left (click)="share(testcenter
-          )" clear item-right>
+            <button ion-button icon-left (click)="favorite(property)" clear item-left>
+                    <ion-icon name="analytics"></ion-icon>
+                    Compare Testing/Procedure Cost
+                </button>
+          <button ion-button icon-left (click)="share(testcenter)" clear item-right>
               <ion-icon name="share"></ion-icon>
               Share
           </button>
