@@ -15,7 +15,7 @@ export class AppointmentListPage {
     category:string="Doctor";
     constructor(public alertCtrl: AlertController,public toastCtrl: ToastController,public navCtrl: NavController, public navParams: NavParams,public service: PropertyService) {
         this.appointmentCategory=this.navParams.data;
-        if(this.appointmentCategory!==null){
+        if(this.appointmentCategory){
             this.category=this.appointmentCategory.category;
         }
         this.getAppointments();
@@ -23,7 +23,7 @@ export class AppointmentListPage {
 
     itemTapped(appointment) {
         if(this.category==="Doctor"){
-          this.navCtrl.push(PropertyDetailPage, appointment.property);
+          this.navCtrl.push(PropertyDetailPage, appointment);
         }else{
             this.navCtrl.push(TestCenterDetailPage, appointment.testcenter);
         }
@@ -34,16 +34,13 @@ export class AppointmentListPage {
         
     }
     editItem(appointment) {
-        this.service.removeAppointment(appointment)
-            .then(() => {
-                this.getAppointments();
-            })
-            .catch(error => alert(JSON.stringify(error)));
+         this.itemTapped(appointment);
     }
     confirmDelete(appointment){
      let confirm = this.alertCtrl.create({
-       title: 'Kindly confirm your appointment',
-       message: `Your scheduled appointment is with : `,
+       title: 'Kindly confirm appointment cancellation',
+       message: `Your scheduled appointment : Type: ${appointment.appmtType}
+        Date: ${appointment.appdate } Time: ${appointment.apptime}  will be cancelled.`,
        buttons: [
          {
            text: 'Cancel',

@@ -1,7 +1,7 @@
 {
-  "name": "dreamhouse",
+  "name": "dokita",
   "version": "0.0.0",
-  "author": "Christophe Coenraets",
+  "author": "Temitope Fatayo",
   "homepage": "http://coenraets.org/",
   "private": true,
   "scripts": {
@@ -57,7 +57,7 @@
       "locator": "ios"
     }
   ],
-  "description": "dreamhouse sample app",
+  "description": "dokita sample app",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},

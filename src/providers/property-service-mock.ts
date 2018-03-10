@@ -46,12 +46,12 @@ export class PropertyService {
       }else{
         this.appointments.push({category:appDetail.category,doctor:{}, testcenter:appDetail.testcenter,appdate:appDetail.appdate,apptime:appDetail.apptime,apptype:appDetail.apptype});
       }
-    return Promise.resolve()
+    return Promise.resolve(this.appointments);
     }
   }
-  getAppointments(category:string){
+  getAppointments(cat:string){
     return Promise.resolve(this.appointments.filter((appdetail:any)=>{
-      appdetail.category.indexOf(category)>-1;
+      return (appdetail.category).toUpperCase().indexOf(cat.toUpperCase()) > -1; 
     }));
   }
   removeAppointment(appDetail){

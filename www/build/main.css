@@ -24415,12 +24415,12 @@ ion-navbar.toolbar {
   color: white;
 }
 
-.property-detai .ion-note {
+.property-detail ion-note {
   color: #84BF41 !important;
   font-size: 1.4rem !important;
 }
 
-.property-detai ion-col {
+.property-detail ion-col {
   padding: 16px;
   border: solid 1px #DDD;
   background-color: #dd295b;
@@ -24430,11 +24430,11 @@ ion-navbar.toolbar {
   margin: 5px;
 }
 
-.property-detai .btn-padding {
+.property-detail .btn-padding {
   margin-bottom: 8px !important;
 }
 
-.property-detai ion-scroll {
+.property-detail ion-scroll {
   background-color: #40490d;
   min-height: 40px !important;
   white-space: nowrap !important;

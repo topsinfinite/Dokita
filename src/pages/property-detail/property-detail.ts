@@ -20,19 +20,36 @@ export class PropertyDetailPage {
     appointmentCount:any;
     category:string="Doctor";
     appointmentCategory:any;
+    appointment:any;
 
     constructor(public alertCtrl: AlertController,public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, 
         public navParams: NavParams, public propertyService: PropertyService, public toastCtrl: ToastController)
          {
-        this.property = this.navParams.data;
+             let obj=this.navParams.data
+             if(obj.category){
+                 this.appointment=obj;
+                 this.property=this.appointment.property;
+             }else{
+              this.property = this.navParams.data;
+            }
         propertyService.findById(this.property.id).then(
             property => this.property = property
             
         );
+        if(this.property.category){
+            this
+        }
         this.getPendingAppointCount();
     }
     ionViewDidLoad(){
         this.appdate=new Date().toISOString();
+        if(this.appointment){
+            this.isSet=true;
+            this.appdate=this.appointment.appdate;
+            this.category=this.appointment.category;
+            this.appmtType=this.appointment.appmtType
+        }
+
     }
     changeDate(dateval){
         this.isSet=true;
@@ -67,6 +84,7 @@ export class PropertyDetailPage {
               handler: () => {
                   this.appDetail={
                       doctor:this.property,
+                      testcenter:{},
                       category:this.category,
                       appdate:this.appdate,
                       apptime:timepicked,
