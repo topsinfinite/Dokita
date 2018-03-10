@@ -24344,6 +24344,10 @@ ion-navbar.toolbar {
   border-bottom: 0px !important;
 }
 
+.menu-bg-color .item, .menu-bg-color .item-block, .menu-bg-color .item-ios {
+  border-bottom: 0px !important;
+}
+
 .about-header {
   background-color: #434954;
   padding: 16px;
