@@ -24456,7 +24456,7 @@ ion-footer {
 .doctor-card-button {
   position: relative;
   text-align: center;
-  top: -58px;
+  top: -77px;
 }
 
 .doctor-card-button .button-md {
@@ -24474,9 +24474,9 @@ ion-footer {
 
 .doctor-card {
   margin-bottom: 5px !important;
-  width: 95% !important;
+  width: 100% !important;
   padding: 0px !important;
-  height: 225px;
+  height: 260px;
 }
 
 .doctor-card .item-md {
@@ -24485,7 +24485,9 @@ ion-footer {
 }
 
 .doctor-card-box {
-  padding-top: 50px;
+  padding-top: 83px;
+  top: -18px;
+  position: relative;
 }
 
 .label-md {
@@ -24501,6 +24503,15 @@ ion-footer {
 .item-md.item-block .item-inner {
   padding: 0px !important;
   border-bottom: 0px !important;
+}
+
+.list-md ion-item-sliding {
+  background-color: #fff;
+  border: 1px solid white;
+  box-shadow: 1px 1px 4px grey;
+  border-radius: 5px;
+  margin-bottom: 15px !important;
+  margin-top: 15px !important;
 }
 
 .searchbar-input {
