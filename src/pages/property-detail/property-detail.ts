@@ -18,19 +18,38 @@ export class PropertyDetailPage {
     schedules:string[]=[];
     appDetail:any;
     appointmentCount:any;
+    category:string="Doctor";
+    appointmentCategory:any;
+    appointment:any;
 
     constructor(public alertCtrl: AlertController,public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, 
         public navParams: NavParams, public propertyService: PropertyService, public toastCtrl: ToastController)
          {
-        this.property = this.navParams.data;
+             let obj=this.navParams.data
+             if(obj.category){
+                 this.appointment=obj;
+                 this.property=this.appointment.doctor;
+             }else{
+              this.property = this.navParams.data;
+            }
         propertyService.findById(this.property.id).then(
             property => this.property = property
             
         );
+        if(this.property.category){
+            this
+        }
         this.getPendingAppointCount();
     }
     ionViewDidLoad(){
         this.appdate=new Date().toISOString();
+        if(this.appointment){
+            this.isSet=true;
+            this.appdate=this.appointment.appdate;
+            this.category=this.appointment.category;
+            this.appmtType=this.appointment.appmtType
+        }
+
     }
     changeDate(dateval){
         this.isSet=true;
@@ -41,7 +60,12 @@ export class PropertyDetailPage {
         console.log(evt);
     }
     getPendingAppointCount(){
-        this.propertyService.getAppointments().then(data=>this.appointmentCount=data.length);
+        this.propertyService.getAppointments(this.category)
+        .then(data=>
+        {
+            this.appointmentCategory={category:this.category};
+            this.appointmentCount=data.length;
+        });
     }
     confirmAppointment(timepicked) {
        this.appdate=moment(this.appdate).format('D MMM YYYY');
@@ -60,6 +84,8 @@ export class PropertyDetailPage {
               handler: () => {
                   this.appDetail={
                       doctor:this.property,
+                      testcenter:{},
+                      category:this.category,
                       appdate:this.appdate,
                       apptime:timepicked,
                       apptype:this.appmtType
@@ -81,8 +107,8 @@ export class PropertyDetailPage {
     openBrokerDetail(id) {
         this.navCtrl.push(BrokerDetailPage, id);
     }
-    goAppointment(){
-        this.navCtrl.push(AppointmentListPage);
+    goAppointment(appdetail){
+        this.navCtrl.push(AppointmentListPage,this.appointmentCategory);
     }
     favorite(property) {
         this.propertyService.favorite(property)
