@@ -19,10 +19,12 @@ export class TestCenterDetailPage {
   appDetail:any;
   category:string="Testing";
   appointments:any;
+  selectOptions:any={};
+  isSelected:boolean=false;
 
   constructor(public alertCtrl: AlertController,public actionSheetCtrl: ActionSheetController,
     public navCtrl: NavController, public navParams: NavParams,public propertyService: PropertyService, public toastCtrl: ToastController) {
-    
+     
       this.testcenter=this.navParams.data;
       this.tests=this.testcenter.test;
       this.getPendingAppointCount();
@@ -31,9 +33,18 @@ export class TestCenterDetailPage {
 
   ionViewDidLoad(){
     this.appdate=new Date().toISOString();
+    this.selectOptions = {
+      title: 'Select Test/Procedure/Imaging',
+      mode: 'ios'
+    };
   }
+  clickOption(){
+    this.isSelected=true;
+  }
+  
   changeDate(dateval){
       this.isSet=true;
+      this.appmtType=this.tests[0];
       this.schedules=this.testcenter.scheduleTime;
   }
   logAppointment(evt){

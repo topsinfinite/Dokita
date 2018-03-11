@@ -24431,16 +24431,17 @@ ion-navbar.toolbar {
   margin: 5px;
 }
 
-.property-detail .btn-padding {
-  margin-bottom: 8px !important;
-}
-
 .property-detail ion-scroll {
-  background-color: #40490d;
+  /*background-color: rgb(64, 73, 13);*/
   min-height: 40px !important;
   white-space: nowrap !important;
   padding-bottom: 4px !important;
   font-size: 1em;
+}
+
+.btn-padding {
+  margin-bottom: 10px !important;
+  border-radius: 4px;
 }
 
 .searchbar-input {
@@ -24574,6 +24575,18 @@ ion-footer {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: normal;
+}
+
+.test-center .select-text {
+  font-size: 0.8em !important;
+}
+
+.test-center ion-scroll {
+  /*background-color: rgb(64, 73, 13);*/
+  min-height: 40px !important;
+  white-space: nowrap !important;
+  padding-bottom: 4px !important;
+  font-size: 1em;
 }
 
 page-welcome {

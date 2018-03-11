@@ -13,7 +13,6 @@
             <ion-item-sliding  detail-none *ngFor="let appointment of appointments">
               
                 <button detail-none ion-item (click)="itemTapped(appointment)">
-                    <ion-icon name="arrow-back" item-right></ion-icon>
                     <ion-thumbnail item-left>
                         <img src="{{appointment.doctor.thumbnail}}"/>
                     </ion-thumbnail>
@@ -22,6 +21,7 @@
                     <p>{{appointment.doctor.city}}, {{appointment.doctor.state}} ∙ {{appointment.doctor.price}}</p>
                     <h3>Appointment Type: {{appointment.apptype}}</h3>
                     <h3>Date: {{appointment.appdate}} | Time: {{appointment.apptime}}</h3>
+                    <ion-icon name="arrow-back" item-right></ion-icon>
                 </button>
                 <ion-item-options side="right">
                         <button secondary (click)="editItem(appointment)">
@@ -34,15 +34,15 @@
         <ion-list *ngSwitchCase="'Testing'">
                 <ion-item-sliding *ngFor="let appointment of appointments">
                     <button ion-item detail-none (click)="itemTapped(appointment)">
-                        <ion-icon name="arrow-back"></ion-icon>
                         <ion-thumbnail item-left>
                             <img src="{{appointment.testcenter.thumbnail}}"/>
                         </ion-thumbnail>
-                        <h1>{{appointment.testcenter.name}}</h1>
-                        <h2>{{appointment.testcenter.test[0].testname}}</h2>
+                        <h1 text-wrap>{{appointment.testcenter.name}}</h1>
+                        <!--<h2>{{appointment.testcenter.test[0].testname}}</h2>-->
                         <p>{{appointment.testcenter.city}}, {{appointment.testcenter.state}} ∙ {{appointment.doctor.price}}</p>
                         <h3>Appointment Type: {{appointment.apptype}}</h3>
                         <h3>Date: {{appointment.appdate}} | Time: {{appointment.apptime}}</h3>
+                        <ion-icon name="arrow-back"></ion-icon>
                     </button>
                     <ion-item-options side="right">
                         <button secondary (click)="editItem(appointment)">
