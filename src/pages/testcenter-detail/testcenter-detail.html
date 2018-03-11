@@ -5,7 +5,7 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content>
+<ion-content class="test-center">
   <ion-card *ngIf="testcenter.id">
       <img src="{{testcenter.picture}}"/>
       <ion-card-content>
@@ -19,10 +19,10 @@
               <ion-datetime min="2018" [(ngModel)]="appdate" (ionChange)="changeDate($event)"></ion-datetime>
               <ion-icon item-right name="arrow-forward" ></ion-icon>
           </ion-item>
-          <ion-item *ngIf="isSet" >
-                  <ion-label>Select Test/Procedure</ion-label>
-                  <ion-select [(ngModel)]="appmtType" interface="action-sheet" item-right>
-                  <ion-option *ngFor="let test of tests">{{test.testname}}-[Cost-{{test.cost}}]</ion-option>
+          <ion-item *ngIf="isSet">
+                  <ion-label>Test/Procedure</ion-label>
+                  <ion-select [(ngModel)]="appmtType" interface="action-sheet" [selectOptions]="selectOptions" item-right>
+                  <ion-option small (ionSelect)="clickOption()" *ngFor="let test of tests" [selected]="appmtType == test">{{test.testname}}-[Cost-{{test.cost}}]</ion-option>
                    
                   </ion-select>
           </ion-item>
@@ -60,9 +60,9 @@
       </ion-list>
 
       <ion-item>
-            <button ion-button icon-left (click)="favorite(property)" clear item-left>
+            <button *ngIf="isSelected" ion-button icon-left (click)="favorite(property)" clear item-left>
                     <ion-icon name="analytics"></ion-icon>
-                    Compare Testing/Procedure Cost
+                    Compare Cost
                 </button>
           <button ion-button icon-left (click)="share(testcenter)" clear item-right>
               <ion-icon name="share"></ion-icon>

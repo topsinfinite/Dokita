@@ -1,5 +1,4 @@
 .property-detail
-
 {
     ion-note {
     color: color($colors, primary) !important;
@@ -14,13 +13,9 @@
     border-radius: 3px;
     margin: 5px;
     }
-
-    .btn-padding {
-    margin-bottom: 8px !important;
-    }
     
     ion-scroll {
-    background-color: rgb(64, 73, 13);
+    /*background-color: rgb(64, 73, 13);*/
     min-height:40px !important;
     white-space: nowrap !important;
     padding-bottom:4px !important;
@@ -28,3 +23,7 @@
     }
 
 }
+.btn-padding {
+  margin-bottom: 10px !important;
+  border-radius: 4px;
+  }
