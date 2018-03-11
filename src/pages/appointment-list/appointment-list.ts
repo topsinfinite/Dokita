@@ -15,7 +15,7 @@ export class AppointmentListPage {
     category:string="Doctor";
     constructor(public alertCtrl: AlertController,public toastCtrl: ToastController,public navCtrl: NavController, public navParams: NavParams,public service: PropertyService) {
         this.appointmentCategory=this.navParams.data;
-        if(this.appointmentCategory){
+        if(this.appointmentCategory.category){
             this.category=this.appointmentCategory.category;
         }
         this.getAppointments();
