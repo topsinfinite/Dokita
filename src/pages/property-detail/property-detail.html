@@ -1,17 +1,19 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>{{property.name}}</ion-title>
+        <ion-title>Doctor's Profile</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content class="property-detail">
-        
-        
+
+
     <ion-card *ngIf="property.id">
         <img src="{{property.picture}}"/>
         <ion-card-content>
-            <h1 class="card-title">{{property.title}}</h1>
-            <p>{{property.address}}, {{property.city}} {{property.state}}</p>
+          <h1>{{property.name}}</h1>
+            <span class="card-title">{{property.title}}</span>
+            <p><ion-icon ios="ios-home" md="md-home"></ion-icon>{{property.address}}, {{property.city}} {{property.state}}</p>
+            <p><ion-icon ios="ios-call" md="md-call"></ion-icon>08099442825</p>
         </ion-card-content>
        <ion-list>
            <ion-list-header>Shedule Appointment</ion-list-header>
@@ -33,7 +35,7 @@
             <div *ngIf="isSet" ion-item>
                 <h3>Pick Appointment Time</h3>
             <ion-scroll scrollX="true" class="item" >
-                   <button ion-button small class="btn-padding" *ngFor="let itm of schedules" (click)="logAppointment(itm)">{{itm}}</button>
+                   <button ion-button  small class="btn-padding" *ngFor="let itm of schedules" (click)="logAppointment(itm)">{{itm}}</button>
             </ion-scroll>
            </div>
         </ion-list>
@@ -55,11 +57,9 @@
                     <ion-note item-right>{{property.bedrooms}}</ion-note>
                 </ion-item> -->
             <button ion-item (click)="openBrokerDetail(property.broker.id)">
-                <ion-avatar item-left>
-                    <img src="{{property.broker.picture}}"/>
-                </ion-avatar>
-                <h2>{{property.broker.name}}</h2>
-                <p>{{property.broker.title}}</p>
+<p><ion-icon ios="ios-list-box" md="md-list-box"></ion-icon>View profile</p>
+
+
             </button>
         </ion-list>
 

@@ -18,7 +18,7 @@
     .btn-padding {
     margin-bottom: 8px !important;
     }
-    
+
     ion-scroll {
     background-color: rgb(64, 73, 13);
     min-height:40px !important;
@@ -27,4 +27,22 @@
     font-size:1em;
     }
 
+    h1{font-weight:bold;}
+    span{
+
+      font-size:12px;
+      background-color: #016d84;
+      color:#d5e002;
+      padding:3px 10px 3px 10px;
+      border-radius:50px;}
+    p {color:black;
+       font-size:12px;
+       margin-top: 5px;}
+    ion-scroll.scroll-x .scroll-content {overflow: auto; height: 50px;}
+    ion-scroll{background-color: white;}
+    .button-md { border-radius:50px !important;}
+    .button-wp { border-radius:50px !important;}
+    .button-ios { border-radius:50px !important;}
+    ion-icon{margin-right: 5px;}
+    button ion-item{text-align: right;}
 }

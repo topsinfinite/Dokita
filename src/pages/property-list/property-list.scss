@@ -95,7 +95,7 @@ ion-footer {
           border-bottom: 0px !important;
           }
 
-          .list-md ion-item-sliding {
+         ion-item-sliding {
             background-color: #fff;
               border: 1px solid white;
               box-shadow: 1px 1px 4px grey;
@@ -103,4 +103,35 @@ ion-footer {
               margin-bottom: 15px !important;
               margin-top: 15px !important;
           }
+
+          ion-card {
+          position: relative;
+          text-align: center;
+          }
+
+          .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+          }
+
+          .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+          }
+
+          ion-label{
+            height: 210px;
+          }
+
+          .label-ios {margin:0px;}
+          .label-wp {margin:0px;}
+
+          ion-navbar{background-color: red !important;}
 }
