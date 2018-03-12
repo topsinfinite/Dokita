@@ -21,8 +21,8 @@
           </ion-item>
           <ion-item *ngIf="isSet">
                   <ion-label>Test/Procedure</ion-label>
-                  <ion-select [(ngModel)]="appmtType" interface="action-sheet" [selectOptions]="selectOptions" item-right>
-                  <ion-option small (ionSelect)="clickOption()" *ngFor="let test of tests" [selected]="appmtType == test">{{test.testname}}-[Cost-{{test.cost}}]</ion-option>
+                  <ion-select [(ngModel)]="appmtType" (ngModelChange)="testSelected($event)" interface="action-sheet" [selectOptions]="selectOptions" item-right>
+                  <ion-option small (ionSelect)="clickOption()" *ngFor="let test of tests" [value]="test.testname" [selected]="test.testname==appmtType"  >{{test.testname}}-[{{test.cost}}]</ion-option>
                    
                   </ion-select>
           </ion-item>
@@ -45,22 +45,10 @@
               <h3>Category</h3>
               <ion-note item-right>{{getCategory()}}</ion-note>
           </ion-item>
-         <!--  <ion-item>
-                  <ion-icon item-left name="moon"></ion-icon>
-                  <h3>Bedrooms</h3>
-                  <ion-note item-right>{{testcenter.bedrooms}}</ion-note>
-              </ion-item> -->
-          <!-- <button ion-item (click)="openBrokerDetail(testcenter.broker.id)">
-              <ion-avatar item-left>
-                  <img src="{{testcenter.broker.picture}}"/>
-              </ion-avatar>
-              <h2>{{testcenter.broker.name}}</h2>
-              <p>{{testcenter.broker.title}}</p>
-          </button> -->
       </ion-list>
 
       <ion-item>
-            <button *ngIf="isSelected" ion-button icon-left (click)="favorite(property)" clear item-left>
+            <button *ngIf="isSelected" ion-button icon-left (click)="presentProfileModal()" clear item-left>
                     <ion-icon name="analytics"></ion-icon>
                     Compare Cost
                 </button>
