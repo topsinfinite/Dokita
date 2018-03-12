@@ -24462,7 +24462,6 @@ ion-navbar.toolbar {
 }
 
 .property-detail ion-scroll.scroll-x .scroll-content {
-  overflow: auto;
   height: 50px;
 }
 
