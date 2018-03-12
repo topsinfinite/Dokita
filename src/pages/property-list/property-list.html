@@ -11,34 +11,27 @@
 
 <ion-content class="property-list-content">
 
-    <ion-list *ngIf="viewMode==='list'">
-
-        <ion-item-sliding *ngFor="let property of properties">
-<div ion-item (click)="openPropertyDetail(property)" class="doctor-card">
-  <div class="doctor-card-box">
-    <img src="{{property.thumbnail}}"/>
-  </div>
-  <div class="doctor-card-text">
-      <h2>{{property.name}}</h2>
-      <h5>{{property.title}}</h5>
-      <p>{{property.city}}, {{property.state}}.</p>
-  </div>
-  <div class="doctor-card-button">
-      <button ion-button>Book {{property.name}} </button>
-      <p>Rating:
-      <ion-icon color="energized" item-right rating-star name="star" *ngFor="let n of getRating(property.rating)"></ion-icon>
-      </p>
-  </div>
-</div>
+  <ion-list *ngIf="viewMode==='list'">
+      <ion-item-sliding *ngFor="let property of properties">
+            <div ion-item (click)="openPropertyDetail(property)">
+            <img src="http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg"/>
+            <div class="doctor-card-text">
+                      <h2>{{property.name}}</h2>
+                      <h5>{{property.title}}</h5>
+                      <p>{{property.city}}, {{property.state}}.</p>
+            </div>
+            <div class="doctor-card-button">
+                             <button ion-button>Book {{property.name}} </button>
+                           <p>Rating:
+                             <ion-icon color="energized" item-right rating-star name="star" *ngFor="let n of getRating(property.rating)"></ion-icon>
+                           </p>
+                         </div>
+            </div>
             <ion-item-options>
-                <button danger (click)="deleteItem(property)">Delete</button>
-            </ion-item-options>
-        </ion-item-sliding>
-
-    </ion-list>
-
-    <div *ngIf="viewMode==='map'" style="width:100%;height:100%;" id="map"></div>
-
+             <button danger (click)="deleteItem(property)">Delete</button>
+         </ion-item-options>
+      </ion-item-sliding>
+  </ion-list>
 </ion-content>
 
 <ion-footer padding>

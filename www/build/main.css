@@ -24431,17 +24431,62 @@ ion-navbar.toolbar {
   margin: 5px;
 }
 
+.property-detail .btn-padding {
+  margin-bottom: 8px !important;
+}
+
 .property-detail ion-scroll {
-  /*background-color: rgb(64, 73, 13);*/
   min-height: 40px !important;
   white-space: nowrap !important;
   padding-bottom: 4px !important;
   font-size: 1em;
 }
 
-.btn-padding {
-  margin-bottom: 10px !important;
-  border-radius: 4px;
+.property-detail h1 {
+  font-weight: bold;
+}
+
+.property-detail span {
+  font-size: 12px;
+  background-color: #016d84;
+  color: #d5e002;
+  padding: 3px 10px 3px 10px;
+  border-radius: 50px;
+}
+
+.property-detail p {
+  color: black;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.property-detail ion-scroll .scroll-x .scroll-content {
+  overflow: auto;
+  height: 50px;
+}
+
+.property-detail ion-scroll {
+  background-color: white;
+}
+
+.property-detail .button-md {
+  border-radius: 50px !important;
+}
+
+.property-detail .button-wp {
+  border-radius: 50px !important;
+}
+
+.property-detail .button-ios {
+  border-radius: 50px !important;
+}
+
+.property-detail ion-icon {
+  margin-right: 5px;
+}
+
+.property-detail button ion-item {
+  text-align: right;
 }
 
 .searchbar-input {
@@ -24536,13 +24581,51 @@ ion-footer {
   border-bottom: 0px !important;
 }
 
-.property-list-content .list-md ion-item-sliding {
+.property-list-content ion-item-sliding {
   background-color: #fff;
   border: 1px solid white;
   box-shadow: 1px 1px 4px grey;
   border-radius: 5px;
   margin-bottom: 15px !important;
   margin-top: 15px !important;
+}
+
+.property-list-content ion-card {
+  position: relative;
+  text-align: center;
+}
+
+.property-list-content .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.property-list-content .card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  color: #fff;
+}
+
+.property-list-content ion-label {
+  height: 210px;
+}
+
+.property-list-content .label-ios {
+  margin: 0px;
+}
+
+.property-list-content .label-wp {
+  margin: 0px;
+}
+
+.property-list-content ion-navbar {
+  background-color: red !important;
 }
 
 .searchbar-input {
