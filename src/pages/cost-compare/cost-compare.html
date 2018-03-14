@@ -1,3 +1,27 @@
-<ion-content>
-    
+<ion-header>
+        <ion-toolbar>
+                <ion-title>
+                 Cost Comparison -{{test.testname}}-{{test.cost}}
+                </ion-title>
+                <ion-buttons start>
+                  <button ion-button (click)="dismiss()">
+                    <span ion-text color="primary" showWhen="ios">Cancel</span>
+                    <span>Cancel <ion-icon name="md-close" showWhen="android,windows"></ion-icon></span>
+                  </button>
+                </ion-buttons>
+              </ion-toolbar>
+</ion-header>
+<ion-content class="cost-compare">
+    <h5>Compare price -{{test.testname}}({{test.cost}}) with others</h5>
+  <ion-list>
+  <button ion-item *ngFor="let item of testList" (click)="openTestCenterDetail(item)">
+      <ion-avatar item-left>
+          <img src="{{item.image}}">
+        </ion-avatar>
+        <h2>{{item.testname}}-Cost:{{item.cost}}</h2>
+        <h3>{{item.centername}}</h3>
+        <p>{{item.address}} {{item.city}}</p>
+        <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" item-right></ion-icon>
+      </button> 
+</ion-list>
 </ion-content> 

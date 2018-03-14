@@ -4,6 +4,7 @@ import {ActionSheetController, ModalController, ActionSheet, NavController, NavP
 import {AppointmentListPage} from '../appointment-list/appointment-list';
 import {CostCompareModal} from '../cost-compare/cost-compare';
 import {PropertyService} from '../../providers/property-service-mock';
+import {TestCenterService} from '../../providers/testcenter-service-mock';
  
  @Component({
   selector: 'page-testcenter-detail',
@@ -22,9 +23,10 @@ export class TestCenterDetailPage {
   appointments:any;
   selectOptions:any={};
   isSelected:boolean=false;
+  selectedTest:any={};
 
   constructor(public alertCtrl: AlertController,public modalCtrl: ModalController, public actionSheetCtrl: ActionSheetController,
-    public navCtrl: NavController, public navParams: NavParams,public propertyService: PropertyService, public toastCtrl: ToastController) {
+    public navCtrl: NavController, public navParams: NavParams,public testService:TestCenterService, public propertyService: PropertyService, public toastCtrl: ToastController) {
      
       this.testcenter=this.navParams.data;
       this.tests=this.testcenter.test;
@@ -39,18 +41,24 @@ export class TestCenterDetailPage {
       mode: 'ios'
     };
   }
-  presentProfileModal() {
-    let costCompModal = this.modalCtrl.create(CostCompareModal, { userId: 8675309 });
+  presentCostCompareModal() {
+    let result:any={};
+    this.testService.findByNameAndOrderByCost(this.appmtType,this.testcenter.id)
+    .then(data=>{
+      console.log(data);
+      let costCompModal = this.modalCtrl.create(CostCompareModal, { test: this.selectedTest,testList:data});
     costCompModal.present();
+    });
+   
   }
   clickOption(){
     this.isSelected=true;
   }
   testSelected(newval) {
-    let selectedTest = this.tests.find((f)=>{
+    this.selectedTest = this.tests.find((f)=>{
       return f.testname=== newval;
     });
-    this.tests.test=selectedTest;
+    this.tests.test=this.selectedTest;
 }
   changeDate(dateval){
       this.isSet=true;

@@ -24416,6 +24416,14 @@ ion-navbar.toolbar {
   color: white;
 }
 
+.cost-compare .toolbar-title {
+  text-overflow: inherit !important;
+}
+
+.cost-compare .toolbar-title-md, .cost-compare .toolbar-title-ios {
+  font-size: 1.6em !important;
+}
+
 .property-detail ion-note {
   color: #006d84 !important;
   font-size: 1.4rem !important;
