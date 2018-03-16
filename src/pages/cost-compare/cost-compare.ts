@@ -15,6 +15,7 @@ import {TestCenterService} from "../../providers/testcenter-service-mock";
           let data=this.navparam.data;
           this.test=data.test;
           this.testList=data.testList;
+          this.testcenter=data.testcenter;
          // console.log(data.testList);
       }
   

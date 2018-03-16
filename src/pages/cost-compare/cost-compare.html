@@ -1,7 +1,7 @@
 <ion-header>
         <ion-toolbar>
                 <ion-title>
-                 Cost Comparison -{{test.testname}}-{{test.cost}}
+                 Cost Comparison
                 </ion-title>
                 <ion-buttons start>
                   <button ion-button (click)="dismiss()">
@@ -12,16 +12,23 @@
               </ion-toolbar>
 </ion-header>
 <ion-content class="cost-compare">
-    <h5>Compare price -{{test.testname}}({{test.cost}}) with others</h5>
+  <ion-list no-lines>
+  <ion-item item-start>
+      <ion-icon item-left name="home"></ion-icon>
+      <h2 text-wrap>{{testcenter.name}}</h2>
+      <h4>{{test.testname}}-Cost:{{test.cost}}</h4>
+  </ion-item>
+  
+  </ion-list>
   <ion-list>
   <button ion-item *ngFor="let item of testList" (click)="openTestCenterDetail(item)">
       <ion-avatar item-left>
           <img src="{{item.image}}">
         </ion-avatar>
-        <h2>{{item.testname}}-Cost:{{item.cost}}</h2>
-        <h3>{{item.centername}}</h3>
+        <h2>{{item.centername}}</h2>
         <p>{{item.address}} {{item.city}}</p>
-        <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" item-right></ion-icon>
+        <h4>{{item.testname}}-Cost:{{item.cost}}</h4>
+         
       </button> 
 </ion-list>
 </ion-content> 

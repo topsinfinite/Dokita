@@ -37,15 +37,15 @@
     },
     {
         id: 2,
-        name:"Boston General hospital Laboratory",
+        name:"Monton General hospital Laboratory",
         address: "18 Henry st",
-        city: "Boston",
+        city: "Monton",
         state: "MA",
         zip: "01742",
         price: "$130",
         category:"lab",
-        long: -71.10869,
-        lat: 42.359103,
+        long: -64.790497,
+        lat: 46.090946,
         test:[
             {
                 testname:"CBT",
