@@ -14,18 +14,19 @@
       </ion-card-content>
      <ion-list>
          <ion-list-header>Shedule Appointment</ion-list-header>
+         <ion-item>
+                <ion-label>Select {{getCategory()==="Laboratory"?"Test":getCategory()}}</ion-label>
+                <ion-select [(ngModel)]="appmtType" (ngModelChange)="testSelected($event)" interface="action-sheet" [selectOptions]="selectOptions" item-right>
+                <ion-option small (ionSelect)="clickOption()" *ngFor="let test of tests" [value]="test.testname" [selected]="test.testname==appmtType"  >{{test.testname}}-[{{test.cost}}]</ion-option>
+                 
+                </ion-select>
+        </ion-item>
       <ion-item>
               <ion-icon item-left name="calendar" item-left></ion-icon>
               <ion-datetime min="2018" [(ngModel)]="appdate" (ionChange)="changeDate($event)"></ion-datetime>
               <ion-icon item-right name="arrow-forward" ></ion-icon>
           </ion-item>
-          <ion-item *ngIf="isSet">
-                  <ion-label>Test/Procedure</ion-label>
-                  <ion-select [(ngModel)]="appmtType" (ngModelChange)="testSelected($event)" interface="action-sheet" [selectOptions]="selectOptions" item-right>
-                  <ion-option small (ionSelect)="clickOption()" *ngFor="let test of tests" [value]="test.testname" [selected]="test.testname==appmtType"  >{{test.testname}}-[{{test.cost}}]</ion-option>
-                   
-                  </ion-select>
-          </ion-item>
+         
           <div *ngIf="isSet" ion-item>
               <h3>Pick Appointment Time</h3>
           <ion-scroll scrollX="true" class="item" >

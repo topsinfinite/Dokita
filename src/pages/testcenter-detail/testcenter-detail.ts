@@ -54,6 +54,7 @@ export class TestCenterDetailPage {
       title: 'Select Test/Procedure/Imaging',
       mode: 'ios'
     };
+    this.appmtType=this.tests[0];
     this.loadMap();
 
   }
@@ -116,7 +117,7 @@ export class TestCenterDetailPage {
     });
     
   }
-  
+   
   presentCostCompareModal() {
     this.testService.findByNameAndOrderByCost(this.appmtType,this.testcenter.id)
     .then(data=>{
@@ -128,6 +129,7 @@ export class TestCenterDetailPage {
   }
   clickOption(){
     this.isSelected=true;
+   // this.appmtType=this.tests[0];
   }
   testSelected(newval) {
     this.selectedTest = this.tests.find((f)=>{
@@ -137,7 +139,6 @@ export class TestCenterDetailPage {
 }
   changeDate(dateval){
       this.isSet=true;
-      this.appmtType=this.tests[0];
       this.schedules=this.testcenter.scheduleTime;
   }
   logAppointment(evt){
@@ -194,7 +195,7 @@ export class TestCenterDetailPage {
     if(this.testcenter!==null){
       switch(this.testcenter.category){
         case "lab":
-        return "Laboratory";
+        return  "Laboratory";
         case "procedure":
         return "Procedure";
         case "imaging":

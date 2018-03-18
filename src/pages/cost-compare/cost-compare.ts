@@ -11,6 +11,7 @@ import {TestCenterService} from "../../providers/testcenter-service-mock";
       test:any;
       testList:Array<any>=[];
       testcenter:any;
+      selectcenter:any;
       constructor(public navCtrl: NavController,public navparam:NavParams,public service: TestCenterService, public viewCtrl:ViewController){
           let data=this.navparam.data;
           this.test=data.test;
@@ -25,8 +26,8 @@ import {TestCenterService} from "../../providers/testcenter-service-mock";
       openTestCenterDetail(itm:any){
         this.service.findById(itm.id)
         .then(data=>{
-            this.testcenter=data;
-            this.navCtrl.push(TestCenterDetailPage, this.testcenter);
+            this.selectcenter=data;
+            this.navCtrl.push(TestCenterDetailPage, this.selectcenter);
         })
        
       }
