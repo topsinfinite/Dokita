@@ -23,6 +23,7 @@ let properties: Array<any> = [
             title: "Primary care doctor",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -49,6 +50,7 @@ let properties: Array<any> = [
             title:"Internal medicine",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -75,6 +77,7 @@ let properties: Array<any> = [
             title: "Cardiologist",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -101,6 +104,7 @@ let properties: Array<any> = [
             title: "Dentist",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -127,6 +131,7 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -153,6 +158,7 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -179,6 +185,7 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -205,6 +212,7 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michelle_lambert.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -257,6 +265,7 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -283,6 +292,7 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -309,6 +319,7 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
         },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     }
 ];

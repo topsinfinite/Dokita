@@ -28,7 +28,7 @@ export class PropertyDetailPage {
              let obj=this.navParams.data
              if(obj.category){
                  this.appointment=obj;
-                 this.property=this.appointment.property;
+                 this.property=this.appointment.doctor;
              }else{
               this.property = this.navParams.data;
             }

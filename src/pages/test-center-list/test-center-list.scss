@@ -1,26 +1,30 @@
-.searchbar-input {
+page-test-center-list {
+
+    .searchbar-input {
     box-shadow: none !important;
-  }
-.segment{
+    }
+    .segment{
     background: #ffffff;
-    
-}
-.toolbar-height{
+
+    }
+    .toolbar-height{
     height:4em;
     background: #ffffff;
-}
-.segment-button{
+    }
+    .segment-button{
     height:4em !important;
-}
-.segment-button div{
+    }
+    .segment-button div{
     font-size:1.3em;
-}
-.label-ios h2{
+    }
+    .label-ios h2{
     margin: 0 0 3px !important;
-}
-.item-ios h3, .item-ios h4, .item-ios h5, .item-ios h6, .item-ios p {
+    }
+    .item-ios h3, .item-ios h4, .item-ios h5, .item-ios h6, .item-ios p {
     margin-bottom:6px !important;
     font-size: 1.4rem;
     font-weight: normal;
     line-height: normal;
+    }
+
 }

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import * as moment from 'moment';
-import {ActionSheetController, ActionSheet, NavController, NavParams, ToastController,AlertController} from 'ionic-angular';
+import {ActionSheetController, ModalController, ActionSheet, NavController, NavParams, ToastController,AlertController} from 'ionic-angular';
 import {AppointmentListPage} from '../appointment-list/appointment-list';
+import {CostCompareModal} from '../cost-compare/cost-compare';
 import {PropertyService} from '../../providers/property-service-mock';
  
  @Component({
@@ -19,10 +20,12 @@ export class TestCenterDetailPage {
   appDetail:any;
   category:string="Testing";
   appointments:any;
+  selectOptions:any={};
+  isSelected:boolean=false;
 
-  constructor(public alertCtrl: AlertController,public actionSheetCtrl: ActionSheetController,
+  constructor(public alertCtrl: AlertController,public modalCtrl: ModalController, public actionSheetCtrl: ActionSheetController,
     public navCtrl: NavController, public navParams: NavParams,public propertyService: PropertyService, public toastCtrl: ToastController) {
-    
+     
       this.testcenter=this.navParams.data;
       this.tests=this.testcenter.test;
       this.getPendingAppointCount();
@@ -31,9 +34,27 @@ export class TestCenterDetailPage {
 
   ionViewDidLoad(){
     this.appdate=new Date().toISOString();
+    this.selectOptions = {
+      title: 'Select Test/Procedure/Imaging',
+      mode: 'ios'
+    };
   }
+  presentProfileModal() {
+    let costCompModal = this.modalCtrl.create(CostCompareModal, { userId: 8675309 });
+    costCompModal.present();
+  }
+  clickOption(){
+    this.isSelected=true;
+  }
+  testSelected(newval) {
+    let selectedTest = this.tests.find((f)=>{
+      return f.testname=== newval;
+    });
+    this.tests.test=selectedTest;
+}
   changeDate(dateval){
       this.isSet=true;
+      this.appmtType=this.tests[0];
       this.schedules=this.testcenter.scheduleTime;
   }
   logAppointment(evt){

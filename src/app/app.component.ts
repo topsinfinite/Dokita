@@ -37,7 +37,7 @@ export class MyApp {
         this.appMenuItems = [
             {title: 'Doctors', component: PropertyListPage, icon: 'people'},
             {title: 'Testing/Procedures', component: TestCenterListPage, icon: 'list-box'},
-            {title: 'Appointments', component: AppointmentListPage, icon: 'clock'},
+            {title: 'My Appointments', component: AppointmentListPage, icon: 'clock'},
             {title: 'Insurance Validation', component: WelcomePage, icon: 'barcode'},
         ];
 

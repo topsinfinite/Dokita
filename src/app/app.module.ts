@@ -14,10 +14,12 @@ import {AppointmentListPage} from '../pages/appointment-list/appointment-list';
 import {TestCenterListPage} from '../pages/test-center-list/test-center-list';
 import {TestCenterDetailPage} from '../pages/testcenter-detail/testcenter-detail';
 import {AboutPage} from '../pages/about/about';
+import {CostCompareModal} from '../pages/cost-compare/cost-compare';
 
 import {PropertyService} from "../providers/property-service-mock";
 import {BrokerService} from "../providers/broker-service-mock";
 import {TestCenterService} from "../providers/testcenter-service-mock";
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,12 +36,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BrokerDetailPage,
     AppointmentListPage,
     TestCenterListPage,
-    TestCenterDetailPage
+    TestCenterDetailPage,
+    CostCompareModal
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      tabsPlacement: 'bottom',
+      //mode:"ios",
+      platforms: {
+        ios: {
+          tabsPlacement: 'top',
+        }
+      } 
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -53,7 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BrokerDetailPage,
     AppointmentListPage,
     TestCenterListPage,
-    TestCenterDetailPage
+    TestCenterDetailPage,
+    CostCompareModal
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Doctor's Profile</ion-title>
+        <ion-title text-wrap>Doctor's Profile Doctor's Profile</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -14,6 +14,9 @@
             <span class="card-title">{{property.title}}</span>
             <p><ion-icon ios="ios-home" md="md-home"></ion-icon>{{property.address}}, {{property.city}} {{property.state}}</p>
             <p><ion-icon ios="ios-call" md="md-call"></ion-icon>08099442825</p>
+            <span class="card-title">Afffliations</span>
+            <p *ngFor="let itm of property.affliation"><ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>{{itm}}</p>
+
         </ion-card-content>
        <ion-list>
            <ion-list-header>Shedule Appointment</ion-list-header>
@@ -41,13 +44,13 @@
         </ion-list>
         <ion-list>
             <button ion-item detail-none (click)="goAppointment()" clear >
-                <ion-icon item-left name="leaf"></ion-icon>
+                <ion-icon item-left name="bookmarks"></ion-icon>
                 <h3>Pending Appointments</h3>
 
-                <ion-note item-right>{{appointmentCount}} Count(s)</ion-note>
+                <ion-note item-right>{{appointmentCount}}</ion-note>
             </button>
             <ion-item>
-                <ion-icon item-left name="pricetag"></ion-icon>
+                <ion-icon item-left name="card"></ion-icon>
                 <h3>Cost of Visit</h3>
                 <ion-note item-right>{{property.price}}</ion-note>
             </ion-item>
@@ -56,18 +59,18 @@
                     <h3>Bedrooms</h3>
                     <ion-note item-right>{{property.bedrooms}}</ion-note>
                 </ion-item> -->
-            <button ion-item (click)="openBrokerDetail(property.broker.id)">
-<p><ion-icon ios="ios-list-box" md="md-list-box"></ion-icon>View profile</p>
 
-
-            </button>
         </ion-list>
 
         <ion-item>
-            <button ion-button icon-left (click)="favorite(property)" clear item-left>
+                <button ion-button icon-left (click)="openBrokerDetail(property.broker.id)" clear item-left>
+                        <ion-icon ios="ios-list-box" md="md-list-box"></ion-icon>
+                        View Profile
+                    </button>
+           <!-- <button ion-button icon-left (click)="favorite(property)" clear item-left>
                 <ion-icon name="star"></ion-icon>
                 Favorite
-            </button>
+            </button>-->
             <button ion-button icon-left (click)="share(property)" clear item-right>
                 <ion-icon name="share"></ion-icon>
                 Share

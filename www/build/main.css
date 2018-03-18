@@ -24345,6 +24345,10 @@ ion-navbar.toolbar {
   border-bottom: 0px !important;
 }
 
+.menu-bg-color .segment-ios .segment-button {
+  padding: 10px !important;
+}
+
 .about-header {
   background-color: #434954;
   padding: 16px;
@@ -24436,7 +24440,6 @@ ion-navbar.toolbar {
 }
 
 .property-detail ion-scroll {
-  background-color: #40490d;
   min-height: 40px !important;
   white-space: nowrap !important;
   padding-bottom: 4px !important;
@@ -24451,8 +24454,9 @@ ion-navbar.toolbar {
   font-size: 12px;
   background-color: #016d84;
   color: #d5e002;
-  padding: 3px 10px 3px 10px;
+  padding: 4px 19px 4px 19px;
   border-radius: 50px;
+  text-transform: capitalize;
 }
 
 .property-detail p {
@@ -24461,7 +24465,8 @@ ion-navbar.toolbar {
   margin-top: 5px;
 }
 
-.property-detail ion-scroll.scroll-x .scroll-content {
+.property-detail ion-scroll .scroll-x .scroll-content {
+  overflow: auto;
   height: 50px;
 }
 
@@ -24487,6 +24492,71 @@ ion-navbar.toolbar {
 
 .property-detail button ion-item {
   text-align: right;
+}
+
+.property-detail .segment-ios .segment-button {
+  padding: 11px !important;
+}
+
+.property-detail .datetime-text {
+  font-size: 12px;
+}
+
+.property-detail .datetime {
+  padding: 0px;
+}
+
+.property-detail .ion-ios-calendar {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+.property-detail .ion-md-calendar {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+.property-detail .ion-ios-bookmarks {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+.property-detail .ion-md-bookmarks {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+.property-detail .ion-ios-card {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+.property-detail .ion-md-card {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+.property-detail .item-ios h3 {
+  font-size: 12px !important;
+}
+
+.property-detail .item-md h3 {
+  font-size: 12px !important;
+}
+
+.property-detail #lbl-28 {
+  font-size: 12px;
+}
+
+.property-detail .select-text {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .searchbar-input {
@@ -24628,36 +24698,53 @@ ion-footer {
   background-color: red !important;
 }
 
-.searchbar-input {
+page-test-center-list .searchbar-input {
   box-shadow: none !important;
 }
 
-.segment {
+page-test-center-list .segment {
   background: #ffffff;
 }
 
-.toolbar-height {
+page-test-center-list .toolbar-height {
   height: 4em;
   background: #ffffff;
 }
 
-.segment-button {
+page-test-center-list .segment-button {
   height: 4em !important;
 }
 
-.segment-button div {
+page-test-center-list .segment-button div {
   font-size: 1.3em;
 }
 
-.label-ios h2 {
+page-test-center-list .label-ios h2 {
   margin: 0 0 3px !important;
 }
 
-.item-ios h3, .item-ios h4, .item-ios h5, .item-ios h6, .item-ios p {
+page-test-center-list .item-ios h3, page-test-center-list .item-ios h4, page-test-center-list .item-ios h5, page-test-center-list .item-ios h6, page-test-center-list .item-ios p {
   margin-bottom: 6px !important;
   font-size: 1.4rem;
   font-weight: normal;
   line-height: normal;
+}
+
+page-testcenter-detail .select-text {
+  font-size: 0.8em !important;
+}
+
+page-testcenter-detail ion-scroll {
+  /*background-color: rgb(64, 73, 13);*/
+  min-height: 40px !important;
+  white-space: nowrap !important;
+  padding-bottom: 4px !important;
+  font-size: 1em;
+}
+
+page-testcenter-detail h2 {
+  font-size: 12px !important;
+  font-weight: bold !important;
 }
 
 page-welcome {
