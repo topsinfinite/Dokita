@@ -16878,7 +16878,7 @@ ion-segment {
   border-width: 1px;
   border-style: solid;
   border-color: #006d84;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 3rem;
   color: #006d84;
   background-color: transparent;
@@ -16935,7 +16935,7 @@ ion-segment {
 }
 
 .toolbar-ios .segment-button {
-  max-width: 100px;
+  max-width: 90%;
   height: 2.6rem;
   font-size: 1.2rem;
   line-height: 2.5rem;
@@ -24345,8 +24345,33 @@ ion-navbar.toolbar {
   border-bottom: 0px !important;
 }
 
+<<<<<<< HEAD
 .menu-bg-color .segment-ios .segment-button {
   padding: 10px !important;
+=======
+.menu-bg-color ion-note {
+  color: #016d84 !important;
+}
+
+ion-app .segment {
+  background: #ffffff;
+  width: 100% !important;
+}
+
+ion-app .toolbar-height {
+  height: 4em;
+  background: #ffffff;
+}
+
+ion-app .segment-button {
+  height: 4em !important;
+  width: 100% !important;
+}
+
+ion-app .segment-button div {
+  font-size: 1.3em;
+  width: 100% !important;
+>>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 }
 
 .about-header {
@@ -24418,6 +24443,22 @@ ion-navbar.toolbar {
 .broker ion-card ion-card-content h3 {
   font-size: 1.8rem;
   color: white;
+}
+
+modal-cost-compare .toolbar-title {
+  text-overflow: inherit !important;
+}
+
+modal-cost-compare .toolbar-title-md, modal-cost-compare .toolbar-title-ios {
+  font-size: 1.6em !important;
+}
+
+modal-cost-compare h4 {
+  font-size: 1.8em;
+  background-color: #016d84;
+  color: #d5e002;
+  padding: 3px 10px 3px 10px;
+  border-radius: 20px;
 }
 
 .property-detail ion-note {
@@ -24586,7 +24627,7 @@ ion-footer {
 .property-list-content .doctor-card-button {
   position: relative;
   text-align: center;
-  top: -77px;
+  top: -85px;
 }
 
 .property-list-content .doctor-card-button button {
@@ -24702,6 +24743,7 @@ page-test-center-list .searchbar-input {
   box-shadow: none !important;
 }
 
+<<<<<<< HEAD
 page-test-center-list .segment {
   background: #ffffff;
 }
@@ -24719,6 +24761,8 @@ page-test-center-list .segment-button div {
   font-size: 1.3em;
 }
 
+=======
+>>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 page-test-center-list .label-ios h2 {
   margin: 0 0 3px !important;
 }
@@ -24730,6 +24774,13 @@ page-test-center-list .item-ios h3, page-test-center-list .item-ios h4, page-tes
   line-height: normal;
 }
 
+<<<<<<< HEAD
+=======
+page-test-center-list h2 {
+  font-size: 1.2em !important;
+}
+
+>>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 page-testcenter-detail .select-text {
   font-size: 0.8em !important;
 }
@@ -24742,9 +24793,27 @@ page-testcenter-detail ion-scroll {
   font-size: 1em;
 }
 
+<<<<<<< HEAD
 page-testcenter-detail h2 {
   font-size: 12px !important;
   font-weight: bold !important;
+=======
+page-testcenter-detail .scroll {
+  height: 100%;
+}
+
+page-testcenter-detail #map {
+  width: 100%;
+  height: 300px;
+}
+
+page-testcenter-detail ion-note {
+  color: #016d84 !important;
+}
+
+page-testcenter-detail h1 {
+  font-size: 2em;
+>>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 }
 
 page-welcome {

@@ -18,7 +18,8 @@ export interface MenuItem {
 }
 
 @Component({
-    templateUrl: 'app.html'
+    templateUrl: 'app.html',
+    selector:'app'
 })
 export class MyApp {
     @ViewChild(Nav) nav: Nav;

@@ -1,14 +1,34 @@
 import { Component } from '@angular/core';
-import { NavParams } from 'ionic-angular';
-
+import { NavParams,ViewController,NavController } from 'ionic-angular';
+import {TestCenterDetailPage} from '../testcenter-detail/testcenter-detail';
+import {TestCenterService} from "../../providers/testcenter-service-mock";
 
 @Component({
     selector: 'modal-cost-compare',
     templateUrl: 'cost-compare.html',
   })
   export class CostCompareModal {
-      constructor(public navparam:NavParams){
+      test:any;
+      testList:Array<any>=[];
+      testcenter:any;
+      selectcenter:any;
+      constructor(public navCtrl: NavController,public navparam:NavParams,public service: TestCenterService, public viewCtrl:ViewController){
           let data=this.navparam.data;
-          console.log(data.userId);
+          this.test=data.test;
+          this.testList=data.testList;
+          this.testcenter=data.testcenter;
+         // console.log(data.testList);
+      }
+  
+      dismiss() {
+        this.viewCtrl.dismiss();
+      }
+      openTestCenterDetail(itm:any){
+        this.service.findById(itm.id)
+        .then(data=>{
+            this.selectcenter=data;
+            this.navCtrl.push(TestCenterDetailPage, this.selectcenter);
+        })
+       
       }
   }

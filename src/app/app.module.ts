@@ -23,6 +23,7 @@ import {TestCenterService} from "../providers/testcenter-service-mock";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {Geolocation} from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HttpModule,
     IonicModule.forRoot(MyApp, {
       tabsPlacement: 'bottom',
-      //mode:"ios",
+      mode:"ios",
       platforms: {
         ios: {
           tabsPlacement: 'top',
@@ -70,6 +71,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     PropertyService,
     BrokerService,
     TestCenterService,

@@ -9,23 +9,24 @@
   <ion-card *ngIf="testcenter.id">
       <img src="{{testcenter.picture}}"/>
       <ion-card-content>
-          <h1 class="card-title">{{testcenter.name}}</h1>
+          <h1>{{testcenter.name}}</h1>
           <p>{{testcenter.address}}, {{testcenter.city}} {{testcenter.state}}</p>
       </ion-card-content>
      <ion-list>
          <ion-list-header>Shedule Appointment</ion-list-header>
+         <ion-item>
+                <ion-label>Select {{getCategory()==="Laboratory"?"Test":getCategory()}}</ion-label>
+                <ion-select [(ngModel)]="appmtType" (ngModelChange)="testSelected($event)" interface="action-sheet" [selectOptions]="selectOptions" item-right>
+                <ion-option small (ionSelect)="clickOption()" *ngFor="let test of tests" [value]="test.testname" [selected]="test.testname==appmtType"  >{{test.testname}}-[{{test.cost}}]</ion-option>
+                 
+                </ion-select>
+        </ion-item>
       <ion-item>
               <ion-icon item-left name="calendar" item-left></ion-icon>
               <ion-datetime min="2018" [(ngModel)]="appdate" (ionChange)="changeDate($event)"></ion-datetime>
               <ion-icon item-right name="arrow-forward" ></ion-icon>
           </ion-item>
-          <ion-item *ngIf="isSet">
-                  <ion-label>Test/Procedure</ion-label>
-                  <ion-select [(ngModel)]="appmtType" (ngModelChange)="testSelected($event)" interface="action-sheet" [selectOptions]="selectOptions" item-right>
-                  <ion-option small (ionSelect)="clickOption()" *ngFor="let test of tests" [value]="test.testname" [selected]="test.testname==appmtType"  >{{test.testname}}-[{{test.cost}}]</ion-option>
-                   
-                  </ion-select>
-          </ion-item>
+         
           <div *ngIf="isSet" ion-item>
               <h3>Pick Appointment Time</h3>
           <ion-scroll scrollX="true" class="item" >
@@ -48,7 +49,7 @@
       </ion-list>
 
       <ion-item>
-            <button *ngIf="isSelected" ion-button icon-left (click)="presentProfileModal()" clear item-left>
+            <button *ngIf="isSelected" ion-button icon-left (click)="presentCostCompareModal()" clear item-left>
                     <ion-icon name="analytics"></ion-icon>
                     Compare Cost
                 </button>
@@ -57,6 +58,20 @@
               Share
           </button>
       </ion-item>
-
+    <ion-item>
+        <div #map id="map"></div>
+    </ion-item>
+   <ion-list>
+        <ion-item>
+                <ion-icon item-left name="car"></ion-icon>
+                <h3>Distance</h3>
+                <ion-note item-right>{{distance}}</ion-note>
+            </ion-item>
+            <ion-item>
+                    <ion-icon item-left name="pricetag"></ion-icon>
+                    <h3>Duration</h3>
+                    <ion-note item-right>{{duration}}</ion-note>
+                </ion-item>
+   </ion-list>
   </ion-card>
 </ion-content>

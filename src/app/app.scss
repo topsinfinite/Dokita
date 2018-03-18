@@ -27,5 +27,32 @@
           padding: 0px !important;
           border-bottom: 0px !important;
           }
+<<<<<<< HEAD
           .segment-ios .segment-button {padding: 10px !important;}
+=======
+          ion-note{
+                color:#016d84 !important;
+            }
+            
+>>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 }
+ion-app{
+        .segment{
+                background: #ffffff;
+                width: 100% !important;
+            }
+            .toolbar-height{
+                height:4em;
+                background: #ffffff;
+            }
+            .segment-button{
+                height:4em !important;
+                width: 100% !important;
+            }
+            .segment-button div{
+                font-size:1.3em;
+                width: 100% !important;
+        }
+            
+}
+ 

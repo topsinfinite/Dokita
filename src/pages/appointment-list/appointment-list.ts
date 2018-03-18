@@ -31,7 +31,6 @@ export class AppointmentListPage {
 
     deleteItem(evt) {
         this.confirmDelete(evt);
-        
     }
     editItem(appointment) {
          this.itemTapped(appointment);
@@ -69,8 +68,13 @@ export class AppointmentListPage {
      confirm.present();
       }
     getAppointments() {
+        this.appointments=[];
         this.service.getAppointments(this.category)
             .then(data => this.appointments = data);
+    }
+    segmentChanged(event){
+      this.category=event.value
+      this.getAppointments();
     }
 
 }
