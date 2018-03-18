@@ -1,13 +1,19 @@
-.searchbar-input {
-    box-shadow: none !important;
-  }
 
-.label-ios h2{
-    margin: 0 0 3px !important;
-}
-.item-ios h3, .item-ios h4, .item-ios h5, .item-ios h6, .item-ios p {
-    margin-bottom:6px !important;
-    font-size: 1.4rem;
-    font-weight: normal;
-    line-height: normal;
+page-test-center-list{
+    .searchbar-input {
+        box-shadow: none !important;
+      }
+    
+    .label-ios h2{
+        margin: 0 0 3px !important;
+    }
+    .item-ios h3, .item-ios h4, .item-ios h5, .item-ios h6, .item-ios p {
+        margin-bottom:6px !important;
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: normal;
+    }
+    h2{
+        font-size: 1.2em !important;
+    }
 }
