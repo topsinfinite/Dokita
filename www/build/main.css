@@ -24336,6 +24336,12 @@ ion-navbar.toolbar {
   padding-top: 20px;
 }
 
+.menu-bg-color .menu-bg-color .menu-logo {
+  height: 80px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 .menu-bg-color .list-ios .item-block .item-inner {
   border-bottom: 0px !important;
 }
@@ -24343,35 +24349,6 @@ ion-navbar.toolbar {
 .menu-bg-color .item-md, .menu-bg-color .item-block, .menu-bg-color .item-inner {
   padding: 0px !important;
   border-bottom: 0px !important;
-}
-
-<<<<<<< HEAD
-.menu-bg-color .segment-ios .segment-button {
-  padding: 10px !important;
-=======
-.menu-bg-color ion-note {
-  color: #016d84 !important;
-}
-
-ion-app .segment {
-  background: #ffffff;
-  width: 100% !important;
-}
-
-ion-app .toolbar-height {
-  height: 4em;
-  background: #ffffff;
-}
-
-ion-app .segment-button {
-  height: 4em !important;
-  width: 100% !important;
-}
-
-ion-app .segment-button div {
-  font-size: 1.3em;
-  width: 100% !important;
->>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 }
 
 .about-header {
@@ -24627,7 +24604,7 @@ ion-footer {
 .property-list-content .doctor-card-button {
   position: relative;
   text-align: center;
-  top: -85px;
+  top: -77px;
 }
 
 .property-list-content .doctor-card-button button {
@@ -24743,7 +24720,6 @@ page-test-center-list .searchbar-input {
   box-shadow: none !important;
 }
 
-<<<<<<< HEAD
 page-test-center-list .segment {
   background: #ffffff;
 }
@@ -24761,8 +24737,6 @@ page-test-center-list .segment-button div {
   font-size: 1.3em;
 }
 
-=======
->>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 page-test-center-list .label-ios h2 {
   margin: 0 0 3px !important;
 }
@@ -24774,13 +24748,10 @@ page-test-center-list .item-ios h3, page-test-center-list .item-ios h4, page-tes
   line-height: normal;
 }
 
-<<<<<<< HEAD
-=======
 page-test-center-list h2 {
   font-size: 1.2em !important;
 }
 
->>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
 page-testcenter-detail .select-text {
   font-size: 0.8em !important;
 }
@@ -24793,11 +24764,6 @@ page-testcenter-detail ion-scroll {
   font-size: 1em;
 }
 
-<<<<<<< HEAD
-page-testcenter-detail h2 {
-  font-size: 12px !important;
-  font-weight: bold !important;
-=======
 page-testcenter-detail .scroll {
   height: 100%;
 }
@@ -24813,7 +24779,11 @@ page-testcenter-detail ion-note {
 
 page-testcenter-detail h1 {
   font-size: 2em;
->>>>>>> b250f1e4f37af8722972537fbb7f276bbe4f1a2a
+}
+
+page-testcenter-detail .label-ios h2 {
+  font-size: 12px !important;
+  font-weight: bold !important;
 }
 
 page-welcome {
