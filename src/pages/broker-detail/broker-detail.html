@@ -5,9 +5,7 @@
 </ion-header>
 
 <ion-content class="broker">
-
     <ion-card>
-
         <ion-card-content>
             <img src="{{broker.picture}}"/>
             <h2>{{broker.name}}</h2>
@@ -20,11 +18,11 @@
                 <p>Call Office</p>
                 <h2>{{broker.phone}}</h2>
             </a>
-            <a href="tel:{{broker.phone}}" ion-item>
+           <!-- <a href="tel:{{broker.phone}}" ion-item>
                     <ion-icon name="call" item-left></ion-icon>
                     <p>Call Mobile</p>
                     <h2>{{broker.mobilePhone}}</h2>
-                </a>
+                </a>-->
             <a href="mailto:{{broker.email}}" ion-item>
                     <ion-icon name="mail" item-left></ion-icon>
                     <p>Email</p>
@@ -51,10 +49,6 @@
                 </ion-note>
         
             </ion-item>
-            
-        
         </ion-list>
-
     </ion-card>
-
 </ion-content>

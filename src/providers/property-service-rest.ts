@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Http, Headers, RequestOptions} from '@angular/http';
+import {Http, Headers, RequestOptions,Response} from '@angular/http';
 import {SERVER_URL} from './config';
 
 let propertiesURL = SERVER_URL + 'properties/',
@@ -48,5 +48,10 @@ export class PropertyService {
             .map(res => res.json())
             .toPromise();
     }
+
+    getListDetails(){
+        return this.http.get('assets/data/products.json')
+          .map((response:Response)=>response.json());
+      }
 
 }

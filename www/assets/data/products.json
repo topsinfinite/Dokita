@@ -1,0 +1,21 @@
+[
+  {
+    "plu":"01234567895",
+    "name":"TOKUNBO AJAYI",
+    "price":76,
+    "desc":"Gaming DDR5 RAM 16GB PC-128000 For x64 PC",
+    "groupno":"E00000981233",
+    "provider":"Johns Hopkins EHP",
+    "effdate":"01-Jan-2018"
+
+  },
+  {
+    "plu":"01234567898",
+    "name":"Intel Core i7 3.3GHz",
+    "price":200,
+    "desc":"Intel Core i7 3.3GHz L2 16MB 4.6ns",
+    "groupno":"E00000981233",
+    "provider":"Johns Hopkins EHP",
+    "effdate":"01-Jan-2018"
+  }
+]

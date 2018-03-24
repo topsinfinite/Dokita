@@ -13,6 +13,9 @@ let properties: Array<any> = [
         bathrooms: 3,
         long: -71.11095,
         lat: 42.35663,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "colonial",
@@ -23,7 +26,14 @@ let properties: Array<any> = [
             title: "Primary care doctor",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -40,6 +50,9 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.10869,
         lat: 42.359103,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "colonial",
@@ -50,7 +63,14 @@ let properties: Array<any> = [
             title:"Internal medicine",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -67,6 +87,9 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.070061,
         lat: 42.359986,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "contemporary",
@@ -78,6 +101,7 @@ let properties: Array<any> = [
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
         },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -94,6 +118,9 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.110448,
         lat: 42.360642,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "victorian",
@@ -104,7 +131,14 @@ let properties: Array<any> = [
             title: "Dentist",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -121,6 +155,9 @@ let properties: Array<any> = [
         bathrooms: 2,
         long: -71.084454,
         lat: 42.368168,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "contemporary",
@@ -131,7 +168,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -148,6 +192,9 @@ let properties: Array<any> = [
         bathrooms: 2,
         long: -71.052617,
         lat: 42.366855,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "colonial",
@@ -158,7 +205,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -175,6 +229,9 @@ let properties: Array<any> = [
         bathrooms: 1,
         long: -71.057352,
         lat: 42.365003,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "colonial",
@@ -185,7 +242,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -202,6 +266,9 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.121653,
         lat: 42.374117,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "victorian",
@@ -212,7 +279,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michelle_lambert.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -229,6 +303,9 @@ let properties: Array<any> = [
         bathrooms: 3,
         long: -71.049327,
         lat: 42.35695,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "contemporary",
@@ -239,6 +316,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
+        affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -255,6 +340,9 @@ let properties: Array<any> = [
         bathrooms: 2,
         long: -71.105475,
         lat: 42.347400,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "contemporary",
@@ -265,7 +353,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -282,6 +377,9 @@ let properties: Array<any> = [
         bathrooms: 3,
         lat: 42.349693,
         long: -71.084407,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "contemporary",
@@ -292,7 +390,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     },
     {
@@ -309,6 +414,9 @@ let properties: Array<any> = [
         bathrooms: 3,
         lat: 42.352466,
         long: -71.075311,
+        phone: "617-244-3672",
+        mobilePhone: "617-244-3672",
+        email: "toks@ionichealth.com",
         picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
         tags: "colonial",
@@ -319,7 +427,14 @@ let properties: Array<any> = [
             title: "Senior Broker",
             picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
         },
+        background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
+        education:{
+                degree:"MD, SUNY at Buffalo School of Medicine (2005)",
+                residences:"University of Maryland Medical Center / Family Medicine (2007)",
+                board_certifications:"American Board of Family Medicine / Family Medicine (2009)"
+            },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
+        insurance:["EHP","ATHENA","BlueCross"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
     }
 ];

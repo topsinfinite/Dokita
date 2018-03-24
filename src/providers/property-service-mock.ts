@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import properties from './mock-properties';
+import {Http,Response} from '@angular/http';
 
 @Injectable()
 export class PropertyService {
@@ -7,7 +8,10 @@ export class PropertyService {
   favoriteCounter: number = 0;
   favorites: Array<any> = [];
   appointments:Array<any>=[];
-
+  
+  constructor(public http: Http) {
+    this.http = http;
+    }
   findAll() {
     return Promise.resolve(properties);
   }
@@ -64,6 +68,10 @@ export class PropertyService {
       this.appointments.splice(index, 1);
     }
     return Promise.resolve();
+  }
+  getListDetails(){
+    return this.http.get('assets/data/products.json')
+      .map((response:Response)=>response.json());
   }
 
 }

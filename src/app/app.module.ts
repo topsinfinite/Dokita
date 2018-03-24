@@ -15,6 +15,7 @@ import {TestCenterListPage} from '../pages/test-center-list/test-center-list';
 import {TestCenterDetailPage} from '../pages/testcenter-detail/testcenter-detail';
 import {AboutPage} from '../pages/about/about';
 import {CostCompareModal} from '../pages/cost-compare/cost-compare';
+import {InsuranceValidationPage} from '../pages/insurance-validation/insurance-validation';
 
 import {PropertyService} from "../providers/property-service-mock";
 import {BrokerService} from "../providers/broker-service-mock";
@@ -24,6 +25,8 @@ import {TestCenterService} from "../providers/testcenter-service-mock";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {Geolocation} from '@ionic-native/geolocation';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Toast } from '@ionic-native/toast';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import {Geolocation} from '@ionic-native/geolocation';
     AppointmentListPage,
     TestCenterListPage,
     TestCenterDetailPage,
-    CostCompareModal
+    CostCompareModal,
+    InsuranceValidationPage
+
   ],
   imports: [
     BrowserModule,
@@ -66,12 +71,15 @@ import {Geolocation} from '@ionic-native/geolocation';
     AppointmentListPage,
     TestCenterListPage,
     TestCenterDetailPage,
-    CostCompareModal
+    CostCompareModal,
+    InsuranceValidationPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Geolocation,
+    BarcodeScanner,
+    Toast,
     PropertyService,
     BrokerService,
     TestCenterService,

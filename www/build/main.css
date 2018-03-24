@@ -24387,6 +24387,7 @@ ion-app .segment-button div {
 .about-info p {
   color: #697072;
   text-align: left;
+  line-height: 1.2em;
 }
 
 .about-info ion-icon {
@@ -24454,6 +24455,37 @@ modal-cost-compare h4 {
   color: #d5e002;
   padding: 3px 10px 3px 10px;
   border-radius: 20px;
+}
+
+page-insurance-validation span {
+  font-size: 1em;
+  background-color: #016d84;
+  color: #d5e002;
+  padding: 3px 10px 3px 10px;
+  border-radius: 50px;
+}
+
+page-insurance-validation p {
+  color: black;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+page-insurance-validation h2 {
+  font-size: 1em !important;
+}
+
+page-insurance-validation ion-note {
+  color: #006d84 !important;
+  font-size: 0.9em !important;
+}
+
+page-insurance-validation ion-title {
+  font-size: 1.3em !important;
+}
+
+page-insurance-validation button {
+  font-size: 1em;
 }
 
 .property-detail ion-note {
@@ -24556,7 +24588,7 @@ ion-footer {
 .property-list-content .doctor-card-button {
   position: relative;
   text-align: center;
-  top: -85px;
+  top: -77px;
 }
 
 .property-list-content .doctor-card-button button {

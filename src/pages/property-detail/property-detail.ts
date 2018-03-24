@@ -104,8 +104,8 @@ export class PropertyDetailPage {
         });
         confirm.present();
       }
-    openBrokerDetail(id) {
-        this.navCtrl.push(BrokerDetailPage, id);
+    openBrokerDetail() {
+        this.navCtrl.push(BrokerDetailPage, this.property);
     }
     goAppointment(appdetail){
         this.navCtrl.push(AppointmentListPage,this.appointmentCategory);

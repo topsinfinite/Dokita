@@ -1,0 +1,28 @@
+page-insurance-validation {
+    span{
+
+        font-size:1em;
+        background-color: #016d84;
+        color:#d5e002;
+        padding:3px 10px 3px 10px;
+        border-radius:50px;
+    }
+      p {
+          color:black;
+         font-size:12px;
+         margin-top: 5px;
+        }
+        h2{
+            font-size:1em !important;
+        }
+        ion-note{
+            color: color($colors, primary) !important;
+            font-size: 0.9em !important;
+        }
+        ion-title{
+            font-size: 1.3em !important;
+        }
+        button{
+            font-size: 1em;
+        }
+}

@@ -21,7 +21,7 @@
        <ion-list>
            <ion-list-header>Shedule Appointment</ion-list-header>
         <ion-item>
-                <ion-icon item-left name="calendar" item-left></ion-icon>
+                <ion-icon item-left name="calendar"></ion-icon>
                 <ion-datetime min="2018" [(ngModel)]="appdate" (ionChange)="changeDate($event)"></ion-datetime>
                 <ion-icon item-right name="arrow-forward" ></ion-icon>
             </ion-item>
@@ -54,20 +54,10 @@
                 <h3>Cost of Visit</h3>
                 <ion-note item-right>{{property.price}}</ion-note>
             </ion-item>
-           <!--  <ion-item>
-                    <ion-icon item-left name="moon"></ion-icon>
-                    <h3>Bedrooms</h3>
-                    <ion-note item-right>{{property.bedrooms}}</ion-note>
-                </ion-item> -->
-            <button ion-item (click)="openBrokerDetail(property.broker.id)">
-           <p><ion-icon ios="ios-list-box" md="md-list-box"></ion-icon>....View profile</p>
-
-
-            </button>
         </ion-list>
 
         <ion-item>
-                <button ion-button icon-left (click)="openBrokerDetail(property.broker.id)" clear item-left>
+                <button ion-button icon-left (click)="openBrokerDetail()" clear item-left>
                         <ion-icon name="star"></ion-icon>
                         View more...
                     </button>

@@ -4,7 +4,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 
 import {PropertyListPage} from '../pages/property-list/property-list';
-//import {BrokerListPage} from '../pages/broker-list/broker-list';
+import {InsuranceValidationPage} from '../pages/insurance-validation/insurance-validation';
 //import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {AppointmentListPage} from '../pages/appointment-list/appointment-list';
 import {TestCenterListPage} from '../pages/test-center-list/test-center-list';
@@ -39,7 +39,7 @@ export class MyApp {
             {title: 'Doctors', component: PropertyListPage, icon: 'people'},
             {title: 'Testing/Procedures', component: TestCenterListPage, icon: 'list-box'},
             {title: 'My Appointments', component: AppointmentListPage, icon: 'clock'},
-            {title: 'Insurance Validation', component: WelcomePage, icon: 'barcode'},
+            {title: 'Insurance Validation', component: InsuranceValidationPage, icon: 'barcode'},
         ];
 
         this.accountMenuItems = [

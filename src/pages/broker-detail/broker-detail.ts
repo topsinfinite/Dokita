@@ -13,14 +13,15 @@ export class BrokerDetailPage {
     id;
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public service: BrokerService) {
-        this.id = this.navParams.data;
-        service.findById(this.id).then(
+        this.broker = this.navParams.data;
+        this.education=this.broker.education;
+        /* service.findById(this.id).then(
         data =>{
                 console.log(data);
                 this.broker = data;
                 this.education=data.education;
             }
-        );
+        ); */
     }
 
 }

@@ -66,8 +66,6 @@ export class TestCenterService {
           (testcen.category).toUpperCase().indexOf(key)>-1;
         }) */
            
-    
-          
          
       }
 }
