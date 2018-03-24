@@ -21,7 +21,7 @@ let properties: Array<any> = [
             id: 1,
             name: "Tokunbo Ajayi",
             title: "Primary care doctor",
-            picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
+            picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg"
         },
         affliation:["Johns Hopkins Hospital","University of Maryland"],
         scheduleTime:["9:00am","9:30am","10:00am","10:30am","11:00am","11:30am","12:00pm","12:30am","1:00pm","1:30pm","2:00pm"]
@@ -40,8 +40,8 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.10869,
         lat: 42.359103,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-2.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-2.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -67,8 +67,8 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.070061,
         lat: 42.359986,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-3.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-3.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -94,8 +94,8 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.110448,
         lat: 42.360642,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-4.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-4.jpg",
         tags: "victorian",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -121,8 +121,8 @@ let properties: Array<any> = [
         bathrooms: 2,
         long: -71.084454,
         lat: 42.368168,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-5.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-5.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {

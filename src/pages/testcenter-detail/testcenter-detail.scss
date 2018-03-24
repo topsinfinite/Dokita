@@ -21,13 +21,24 @@ page-testcenter-detail{
   ion-note{
       color:#016d84 !important;
   }
-  h1{
-      font-size:2em;
+  .card-ios h1{
+      font-size:1.4em;
+      font-weight: bold;
   }
+  h3{font-size:12px;}
+ion-icon {margin-right: 5px;}
 
-  .label-ios h2 {
-  font-size: 12px !important;
-  font-weight: bold !important;
-  }
+.segment-ios .segment-button {padding: 11px !important;}
+
+.datetime-text {font-size: 12px;}
+.datetime {padding:0px;}
+.ion-ios-calendar {font-size: 22px;
+                   margin: 6px; color: #016d84;}
+.ion-md-calendar {font-size: 22px;
+                  margin: 6px; color: #016d84;}
+.ion-ios-bookmarks {font-size: 22px;
+                   margin: 6px; color: #016d84;}
+.ion-md-bookmarks {font-size: 22px;
+ margin: 6px; color: #016d84;}
 
 }

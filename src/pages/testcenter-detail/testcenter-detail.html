@@ -36,7 +36,7 @@
       <ion-list>
 
           <button ion-item (click)="goAppointment()" detail-none >
-              <ion-icon item-left name="leaf"></ion-icon>
+            <ion-icon item-left name="bookmarks"></ion-icon>
               <h3>Pending Appointments</h3>
               <ion-note item-right>{{appointmentCount}} Count(s)</ion-note>
           </button>
@@ -48,7 +48,7 @@
       </ion-list>
 
       <ion-item>
-            <button *ngIf="isSelected" ion-button icon-left (click)="presentProfileModal()" clear item-left>
+            <button *ngIf="isSelected" ion-button icon-left (click)="presentCostCompareModal()" clear item-left>
                     <ion-icon name="analytics"></ion-icon>
                     Compare Cost
                 </button>
@@ -57,6 +57,20 @@
               Share
           </button>
       </ion-item>
-
+      <ion-item>
+              <div #map id="map"></div>
+          </ion-item>
+         <ion-list>
+              <ion-item>
+                      <ion-icon item-left name="car"></ion-icon>
+                      <h3>Distance</h3>
+                      <ion-note item-right>{{distance}}</ion-note>
+                  </ion-item>
+                  <ion-item>
+                          <ion-icon item-left name="pricetag"></ion-icon>
+                          <h3>Duration</h3>
+                          <ion-note item-right>{{duration}}</ion-note>
+                      </ion-item>
+         </ion-list>
   </ion-card>
 </ion-content>

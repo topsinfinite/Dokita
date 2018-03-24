@@ -5,6 +5,7 @@ page-test-center-list {
     }
     .segment{
     background: #ffffff;
+    padding: 5px;
 
     }
     .toolbar-height{
@@ -15,14 +16,15 @@ page-test-center-list {
     height:4em !important;
     }
     .segment-button div{
-    font-size:1.3em;
+    font-size:1.1rem;
     }
-    .label-ios h2{
-    margin: 0 0 3px !important;
+    .label-ios h2 {
+    font-size: 0.9em !important;
+    font-weight: bold !important;
     }
     .item-ios h3, .item-ios h4, .item-ios h5, .item-ios h6, .item-ios p {
     margin-bottom:6px !important;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: normal;
     line-height: normal;
     }
@@ -30,5 +32,39 @@ page-test-center-list {
     h2{
         font-size: 1.2em !important;
     }
+
+.item-ios {
+    background-color: #fff;
+    border: 1px solid white;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 5px;
+    margin-bottom: 15px !important;
+    width:95%;
+    margin:0px auto;
+    padding: 0px !important;
+  }
+
+  .item-ios:first-child {
+    margin-top: 20px;
+  }
+
+  .list-ios > .item-block:first-child {
+    border: none;
+  }
+
+  .list-ios .item-block .item-inner{
+    border-bottom: 0px;
+  }
+
+  .item .item-block .item-ios {padding:0px !important;}
+  .item-ios.item-block .item-inner {padding:0px !important;}
+  .label-ios {margin:0px !important;}
+  .clinic-address {padding:10px;}
+  .clinic-image img {width: 100% !important; height: 100px;}
+  button.item-ios:not([detail-none]) .item-inner {background-image: none;}
+  .segment-ios .segment-button.segment-activated {background-color:#006d84 !important;}
+  .segment-ios-secondary .segment-button {border-color: #006d84 !important; color: #016d84;}
+  .toolbar-ios .segment-button ion-icon {font-size: 2rem;
+    line-height: 0.4rem;}
 
 }

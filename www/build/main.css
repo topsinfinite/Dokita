@@ -24412,7 +24412,7 @@ ion-navbar.toolbar {
 }
 
 .broker ion-card ion-card-content h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-top: .5rem;
   color: white;
 }
@@ -24420,6 +24420,18 @@ ion-navbar.toolbar {
 .broker ion-card ion-card-content h3 {
   font-size: 1.8rem;
   color: white;
+}
+
+.broker .item-ios ion-icon[item-left], .broker .item-ios ion-icon[item-right] {
+  color: #016d84 !important;
+}
+
+.broker .item-ios p {
+  font-size: 1rem !important;
+}
+
+.broker h2 {
+  font-size: 1.2rem !important;
 }
 
 modal-cost-compare .toolbar-title {
@@ -24722,6 +24734,7 @@ page-test-center-list .searchbar-input {
 
 page-test-center-list .segment {
   background: #ffffff;
+  padding: 5px;
 }
 
 page-test-center-list .toolbar-height {
@@ -24734,22 +24747,85 @@ page-test-center-list .segment-button {
 }
 
 page-test-center-list .segment-button div {
-  font-size: 1.3em;
+  font-size: 1.1rem;
 }
 
 page-test-center-list .label-ios h2 {
-  margin: 0 0 3px !important;
+  font-size: 0.9em !important;
+  font-weight: bold !important;
 }
 
 page-test-center-list .item-ios h3, page-test-center-list .item-ios h4, page-test-center-list .item-ios h5, page-test-center-list .item-ios h6, page-test-center-list .item-ios p {
   margin-bottom: 6px !important;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: normal;
   line-height: normal;
 }
 
 page-test-center-list h2 {
   font-size: 1.2em !important;
+}
+
+page-test-center-list .item-ios {
+  background-color: #fff;
+  border: 1px solid white;
+  box-shadow: 1px 1px 4px grey;
+  border-radius: 5px;
+  margin-bottom: 15px !important;
+  width: 95%;
+  margin: 0px auto;
+  padding: 0px !important;
+}
+
+page-test-center-list .item-ios:first-child {
+  margin-top: 20px;
+}
+
+page-test-center-list .list-ios > .item-block:first-child {
+  border: none;
+}
+
+page-test-center-list .list-ios .item-block .item-inner {
+  border-bottom: 0px;
+}
+
+page-test-center-list .item .item-block .item-ios {
+  padding: 0px !important;
+}
+
+page-test-center-list .item-ios.item-block .item-inner {
+  padding: 0px !important;
+}
+
+page-test-center-list .label-ios {
+  margin: 0px !important;
+}
+
+page-test-center-list .clinic-address {
+  padding: 10px;
+}
+
+page-test-center-list .clinic-image img {
+  width: 100% !important;
+  height: 100px;
+}
+
+page-test-center-list button.item-ios:not([detail-none]) .item-inner {
+  background-image: none;
+}
+
+page-test-center-list .segment-ios .segment-button.segment-activated {
+  background-color: #006d84 !important;
+}
+
+page-test-center-list .segment-ios-secondary .segment-button {
+  border-color: #006d84 !important;
+  color: #016d84;
+}
+
+page-test-center-list .toolbar-ios .segment-button ion-icon {
+  font-size: 2rem;
+  line-height: 0.4rem;
 }
 
 page-testcenter-detail .select-text {
@@ -24777,13 +24853,53 @@ page-testcenter-detail ion-note {
   color: #016d84 !important;
 }
 
-page-testcenter-detail h1 {
-  font-size: 2em;
+page-testcenter-detail .card-ios h1 {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
-page-testcenter-detail .label-ios h2 {
-  font-size: 12px !important;
-  font-weight: bold !important;
+page-testcenter-detail h3 {
+  font-size: 12px;
+}
+
+page-testcenter-detail ion-icon {
+  margin-right: 5px;
+}
+
+page-testcenter-detail .segment-ios .segment-button {
+  padding: 11px !important;
+}
+
+page-testcenter-detail .datetime-text {
+  font-size: 12px;
+}
+
+page-testcenter-detail .datetime {
+  padding: 0px;
+}
+
+page-testcenter-detail .ion-ios-calendar {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+page-testcenter-detail .ion-md-calendar {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+page-testcenter-detail .ion-ios-bookmarks {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
+}
+
+page-testcenter-detail .ion-md-bookmarks {
+  font-size: 22px;
+  margin: 6px;
+  color: #016d84;
 }
 
 page-welcome {
