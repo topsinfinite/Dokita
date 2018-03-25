@@ -14,7 +14,7 @@
   <ion-list *ngIf="viewMode==='list'">
       <ion-item-sliding *ngFor="let property of properties">
             <div ion-item (click)="openPropertyDetail(property)">
-            <img src="http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg"/>
+            <img src="{{property.picture}}"/>
             <div class="doctor-card-text">
                       <h2>{{property.name}}</h2>
                       <h5>{{property.title}}</h5>

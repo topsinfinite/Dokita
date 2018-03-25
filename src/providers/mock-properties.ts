@@ -40,8 +40,8 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.10869,
         lat: 42.359103,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-2.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-2.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-2.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-2.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -67,8 +67,8 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.070061,
         lat: 42.359986,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-3.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-3.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-3.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-3.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -94,8 +94,8 @@ let properties: Array<any> = [
         bathrooms: 4,
         long: -71.110448,
         lat: 42.360642,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-4.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-4.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-4.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-4.jpg",
         tags: "victorian",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -121,8 +121,8 @@ let properties: Array<any> = [
         bathrooms: 2,
         long: -71.084454,
         lat: 42.368168,
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-5.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-5.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-5.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-5.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
