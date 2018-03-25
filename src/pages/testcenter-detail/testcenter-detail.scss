@@ -12,17 +12,33 @@ page-testcenter-detail{
         .scroll {
             height: 100%
           }
-     
+
           #map {
             width: 100%;
             height: 300px;
           }
-     
+
   ion-note{
       color:#016d84 !important;
   }
-  h1{
-      font-size:2em;
+  .card-ios h1{
+      font-size:1.4em;
+      font-weight: bold;
   }
+  h3{font-size:12px;}
+ion-icon {margin-right: 5px;}
+
+.segment-ios .segment-button {padding: 11px !important;}
+
+.datetime-text {font-size: 12px;}
+.datetime {padding:0px;}
+.ion-ios-calendar {font-size: 22px;
+                   margin: 6px; color: #016d84;}
+.ion-md-calendar {font-size: 22px;
+                  margin: 6px; color: #016d84;}
+.ion-ios-bookmarks {font-size: 22px;
+                   margin: 6px; color: #016d84;}
+.ion-md-bookmarks {font-size: 22px;
+ margin: 6px; color: #016d84;}
 
 }

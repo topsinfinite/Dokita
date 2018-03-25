@@ -24,7 +24,7 @@ let properties: Array<any> = [
             id: 1,
             name: "Tokunbo Ajayi",
             title: "Primary care doctor",
-            picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
+            picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg"
         },
         background:"Tokunbo Ajayi, M.D., practices family medicine at Johns Hopkins Community Physicians Howard County. She received her medical degree from SUNY at Buffalo School of Medicine, and also completed her residency in family medicine at University of Maryland Medical Center",
         education:{
@@ -53,8 +53,8 @@ let properties: Array<any> = [
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "toks@ionichealth.com",
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-2.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-2.jpg",
         tags: "colonial",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -90,8 +90,8 @@ let properties: Array<any> = [
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "toks@ionichealth.com",
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-3.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-3.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -121,8 +121,8 @@ let properties: Array<any> = [
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "toks@ionichealth.com",
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-4.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-4.jpg",
         tags: "victorian",
         description: "Lorem ipsum dolor sit amet",
         broker: {
@@ -158,8 +158,8 @@ let properties: Array<any> = [
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "toks@ionichealth.com",
-        picture: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
-        thumbnail: "http://comaneng.com/wp-content/uploads/2018/02/doctor-img-1.jpg",
+        picture: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-5.jpg",
+        thumbnail: "http://comaneng.com/wp-content/uploads/2018/03/doctor-img-5.jpg",
         tags: "contemporary",
         description: "Lorem ipsum dolor sit amet",
         broker: {

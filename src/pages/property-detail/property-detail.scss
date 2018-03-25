@@ -1,46 +1,73 @@
 .property-detail
+
 {
-    ion-note {
-    color: color($colors, primary) !important;
-    font-size: 1.4rem !important;
-    }
-    ion-col {
-    padding: 16px;
-    border: solid 1px #DDD;
-    background-color: rgb(221, 41, 91);
-    color: #FFF;
-    min-width: 150px;
-    border-radius: 3px;
-    margin: 5px;
-    }
+          ion-note {
+          color: color($colors, primary) !important;
+          font-size: 1.4rem !important;
+          }
+          ion-col {
+          padding: 16px;
+          border: solid 1px #DDD;
+          background-color: rgb(221, 41, 91);
+          color: #FFF;
+          min-width: 150px;
+          border-radius: 3px;
+          margin: 5px;
+          }
 
-    .btn-padding {
-    margin-bottom: 8px !important;
-    }
+          .btn-padding {
+          margin-bottom: 8px !important;
+          }
 
-    ion-scroll {
-    min-height:40px !important;
-    white-space: nowrap !important;
-    padding-bottom:4px !important;
-    font-size:1em;
-    }
+          ion-scroll {
+          min-height:40px !important;
+          white-space: nowrap !important;
+          padding-bottom:4px !important;
+          font-size:1em;
+          }
 
-    h1{font-weight:bold;}
-    span{
+          h1{font-weight:bold;}
+          span{
+          font-size:12px;
+          background-color: #016d84;
+          color:#d5e002;
+          padding:4px 19px 4px 19px;
+          border-radius:50px;
+          text-transform: capitalize;}
 
-      font-size:12px;
-      background-color: #016d84;
-      color:#d5e002;
-      padding:3px 10px 3px 10px;
-      border-radius:50px;}
-    p {color:black;
-       font-size:12px;
-       margin-top: 5px;}
-    ion-scroll .scroll-x .scroll-content {overflow: auto; height: 50px;}
-    ion-scroll{background-color: white;}
-    .button-md { border-radius:50px !important;}
-    .button-wp { border-radius:50px !important;}
-    .button-ios { border-radius:50px !important;}
-    ion-icon {margin-right: 5px;}
-    button ion-item {text-align: right;}
+          p {color:black;
+          font-size:12px;
+          margin-top: 5px;}
+          ion-scroll .scroll-x .scroll-content {overflow: auto; height: 50px;}
+          ion-scroll{background-color: white;}
+          .button-md { border-radius:50px !important;}
+          .button-wp { border-radius:50px !important;}
+          .button-ios { border-radius:50px !important;}
+          ion-icon {margin-right: 5px;}
+          button ion-item {text-align: right;}
+
+          .segment-ios .segment-button {padding: 11px !important;}
+
+          .datetime-text {font-size: 12px;}
+          .datetime {padding:0px;}
+          .ion-ios-calendar {font-size: 22px;
+                             margin: 6px; color: #016d84;}
+          .ion-md-calendar {font-size: 22px;
+                            margin: 6px; color: #016d84;}
+          .ion-ios-bookmarks {font-size: 22px;
+                             margin: 6px; color: #016d84;}
+          .ion-md-bookmarks {font-size: 22px;
+           margin: 6px; color: #016d84;}
+
+           .ion-ios-card{font-size: 22px;
+            margin: 6px; color: #016d84;}
+            .ion-md-card{font-size: 22px;
+             margin: 6px; color: #016d84;}
+
+
+          .item-ios h3 {font-size:12px !important;}
+          .item-md h3 {font-size:12px !important;}
+          #lbl-28 {font-size:12px;}
+          .select-text {font-size: 14px;
+                        font-weight: bold;}
 }

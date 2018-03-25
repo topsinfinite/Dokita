@@ -6,7 +6,7 @@
             <ion-title>My Appointments</ion-title>
         </ion-navbar>
     </ion-header>
-    
+
     <ion-content>
             <ion-toolbar no-border-top no-border-bottom class="toolbar-height">
                     <ion-segment [(ngModel)]="category" color="secondary" class="segment" (ionChange)="segmentChanged($event)">
@@ -19,12 +19,12 @@
                           <ion-icon name="finger-print"></ion-icon>
                       </ion-segment-button>
                     </ion-segment>
-                   
+
                   </ion-toolbar>
     <div [ngSwitch]="category">
         <ion-list *ngSwitchCase="'Doctor'">
             <ion-item-sliding *ngFor="let appointment of appointments">
-              
+
                 <button detail-none *ngIf="appointment.doctor" ion-item (click)="itemTapped(appointment)">
                     <ion-thumbnail item-left>
                         <img src="{{appointment.doctor.thumbnail}}"/>
@@ -38,7 +38,7 @@
                 </button>
                 <ion-item-options side="right">
                         <button secondary (click)="editItem(appointment)">
-                                <ion-icon name="card"></ion-icon>Edit</button>  
+                                <ion-icon name="card"></ion-icon>Edit</button>
                         <button danger expandable (click)="deleteItem(appointment)">
                                 <ion-icon name="trash"></ion-icon>Cancel</button>
                     </ion-item-options>
@@ -64,10 +64,9 @@
                                 <ion-icon name="trash"></ion-icon>Cancel</button>
                     </ion-item-options>
                    <!--  <ion-item-options>
-                        
+
                     </ion-item-options> -->
                 </ion-item-sliding>
             </ion-list>
     </div>
     </ion-content>
-    
