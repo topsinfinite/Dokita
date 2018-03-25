@@ -24435,22 +24435,6 @@ ion-navbar.toolbar {
   font-size: 1.2rem !important;
 }
 
-modal-cost-compare .toolbar-title {
-  text-overflow: inherit !important;
-}
-
-modal-cost-compare .toolbar-title-md, modal-cost-compare .toolbar-title-ios {
-  font-size: 1.6em !important;
-}
-
-modal-cost-compare h4 {
-  font-size: 1.8em;
-  background-color: #016d84;
-  color: #d5e002;
-  padding: 3px 10px 3px 10px;
-  border-radius: 20px;
-}
-
 page-insurance-validation span {
   font-size: 1em;
   background-color: #016d84;
